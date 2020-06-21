@@ -1,0 +1,23 @@
+.H1Container {
+    color: white;
+    cursor: pointer;
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Major Mono Display';
+    height: 100px;
+    width: 100vw;
+}
+
+.MenuItemContainer {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    color: white;
+    font-family: 'Roboto Slab';
+    align-content: flex-end;
+}
