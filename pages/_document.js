@@ -9,10 +9,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
-        <body>
-          <Main />
-          <NextScript />
+        <Head>
+       
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170228462-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,6 +19,12 @@ class MyDocument extends Document {
 
         gtag('config', 'UA-170228462-1');
         </script>
+
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+       
         </body>
       </Html>
     )
