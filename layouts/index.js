@@ -1,11 +1,19 @@
+import { HeaderContainer } from './layouts.styles'
+
+// From my custom styled components
+import { H1Container } from '../styled-components/h1.header.styles'
+
+
 const DefaultLayout = ({ children }) => (
     <div>
-      <header>
-     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170228462-1"></script>
+        <HeaderContainer>
+            
+            
+                {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170228462-1"></script> */}
 
-        <h1>Yum Tash </h1>
-      </header>
+                <H1Container>Yum Tash</H1Container>
+            
+        </HeaderContainer>
       <main>{children}</main>
     </div>
   );
