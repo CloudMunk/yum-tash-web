@@ -2,10 +2,12 @@ import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
 
+import DefaultLayout from '../layouts';
+
 const Index = (props) => {
     const { posts = [] } = props
     return (
-      <div>
+      <DefaultLayout>
         <h1>Welcome to a blog!</h1>
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
@@ -18,7 +20,7 @@ const Index = (props) => {
               </li>
             )
         )}
-      </div>
+      </DefaultLayout>
     )
 }
 
