@@ -3,8 +3,6 @@ import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import client from '../../client'
 
-import DefaultLayout from '../../layouts/index'
-
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
@@ -18,7 +16,6 @@ const Post = (props) => {
     body = []
   } = props
   return (
-    <DefaultLayout>
       <article>
         <h1>{title}</h1>
         <span>By {name}</span>
@@ -43,7 +40,6 @@ const Post = (props) => {
           {...client.config()}
         />
       </article>
-    </DefaultLayout>
   )
 }
 
