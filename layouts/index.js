@@ -1,30 +1,30 @@
 import Link from 'next/link'
 
 // From my custom styled components
-import { H1Container } from '../styled-components/h1.header.styles'
+// import { H1Container } from '../styled-components/h1.header.styles'
 
 // Local styles for component.
-import { HeaderContainer, MenuItemContainer } from './layouts.styles'
+import styles from './layouts.module.scss'
 
 
 
 
 const DefaultLayout = ({ children }) => (
     <div>
-        <HeaderContainer>
+        <header className={styles.HeaderContainer}>
                 {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170228462-1"></script> */}
                 
                     <Link href="/oppskrifter" as="{`/oppskrifter`}">
-                    <MenuItemContainer>
-                        Oppskrifter
-                    </MenuItemContainer>
+                        <h3 className={styles.MenuItemContainer}>
+                            Oppskrifter
+                        </h3>
                     </Link>
                 
                 <Link href="/" as={`/`}>
-                    <H1Container>Yum Tash</H1Container>
+                    <h1 className={styles.H1Container}>Yum Tash</h1>
                 </Link>
                 
-        </HeaderContainer>
+        </header>
       <main>{children}</main>
     </div>
   );
