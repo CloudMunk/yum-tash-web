@@ -8,7 +8,7 @@ const Index = (props) => {
     const { posts = [] } = props
     return (
       <DefaultLayout>
-        <h1>Welcome to a blog!</h1>
+        <h1>Yum Tash Food Lovers Home</h1>
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
             slug && (
