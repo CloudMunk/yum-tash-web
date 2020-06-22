@@ -11,7 +11,7 @@ import Header from '../components/menu/menu.component'
 const DefaultLayout = ({ children }) => (
     <div>
         <Header />
-      <main>{children}</main>
+        <main>{children}</main>
     </div>
   );
   

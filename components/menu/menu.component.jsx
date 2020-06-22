@@ -5,10 +5,11 @@ import styles from './menu.module.scss'
 const Header = () => (
     <header className={styles.HeaderContainer}>
             {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170228462-1"></script> */}
-            
-                <h3 className={styles.MenuItemContainer}>
-                    Anmeldelser
-                </h3>
+                <Link href="/anmeldelser" as="{`/anmeldelser`}">
+                    <h3 className={styles.Anmeldelser}>
+                        Anmeldelser
+                    </h3>
+                </Link>
                 <div className={styles.dropdown}>
                     
                     <Link href="/oppskrifter" as="{`/oppskrifter`}">

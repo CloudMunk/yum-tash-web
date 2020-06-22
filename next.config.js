@@ -17,4 +17,8 @@ module.exports = (phase, { defaultConfig }) => {
         "views": "ga:221720030"
     }
   }
+  
 }
+
+const withImages = require('next-images')
+module.exports = withImages()
