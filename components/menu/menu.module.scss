@@ -21,8 +21,33 @@
     color: white;
     font-family: 'Roboto Slab';
     margin-top: 20%;
+    cursor: pointer;
 }
 
+// Dropdown
+
+.dropdown {
+    margin-top: 18%;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    font-family: 'Roboto Slab';
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropdownContent {
+    display: block;
+    margin-top: -4.7%;
+  }
+// ----------------------------------
 .SignaturRetter {
     display: flex;
     width: 200px;
