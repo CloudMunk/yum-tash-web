@@ -16,7 +16,7 @@ const Header = () => (
                 <h1 className={styles.H1Container}>Yum Tash</h1>
             </Link>
             <Link href="/signatur" as="{`/signatur`}">
-                <h3 className={styles.MenuItemContainer}>
+                <h3 className={styles.SignaturRetter}>
                     Signatur Retter
                 </h3>
             </Link>

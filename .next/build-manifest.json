@@ -28,19 +28,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/oppskrifter": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/post/[slug]": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/signatur": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
