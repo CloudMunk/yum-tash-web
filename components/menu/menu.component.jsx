@@ -13,7 +13,7 @@ const Header = () => (
             </Link>
             {/* LOGO */}
             <Link href="/" as={`/`}>
-                <h1 className={styles.H1Container}>Yum Tash</h1>
+                <h1 className={styles.H1Container}>Yum Tash MatBlogg</h1>
             </Link>
             <Link href="/signatur" as="{`/signatur`}">
                 <h3 className={styles.SignaturRetter}>
