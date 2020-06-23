@@ -24,9 +24,9 @@ const Header = () => (
                         <p className={styles.dropDownItems}>
                             Middag
                         </p>
-                        <p className={styles.dropDownItems}>
+                        {/* <p className={styles.dropDownItems}>
                             Eksklusive Retter
-                        </p>
+                        </p> */}
                         <p className={styles.dropDownItems}>
                             Tapas
                         </p>
