@@ -20,75 +20,112 @@ const Index = (props) => {
     } = props
     return (
     <div>
-        <DefaultLayout>
-          
-        </DefaultLayout>
+        <DefaultLayout />
         {/* FOLD */}
-        <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80%', height: '700px'}}>
-          <div>
-            <h1 style={{marginLeft: '17%'}}>Yum Tash Food Lovers Home</h1>
+        <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80vw', height: '40vw', display: 'flex', justifyContent: 'center'}}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '26.6vw 26.6vw 26.6vw',
+            backgroundColor: '#E0ECF7',
+            color: '#444'
+          }}>
             <div style={{
-                marginTop: '45px',
-                marginLeft: '17%', 
-                backgroundColor: '#1C060A', 
-                maxWidth: '50vw',
-                minWidth: '50vw',
-                minHeight: '350px',
-                maxHeight: '350px'
-                }}
-            >
-              <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                <div>
-                  <h3 style={{
-                        marginLeft: '10px',
-                        color: 'white'
-                      }}
-                    >
-                      {posts[0].title}
-                  </h3>
-                  
-                  <img
-                    style={{marginLeft: '10px', marginTop: '30px'}}
-                    src={urlFor(posts[0].mainImage)
-                      .width(200)
-                      .url()}
-                  />
-                </div>
-                {/* CARD */}
-                <div  style={{
-                    color: 'white', 
-                    marginTop: '20px', 
-                    backgroundColor: '#226666', 
-                    padding: '5px 20px', 
-                    minWidth: '24vw',
-                    maxWidth: '28vw',
-                    maxHeight: '320px'
-                    }}
-                  >
-                  <h2>
-                    Description
-                  </h2>
-                  <p style={{color: 'white'}}>
-                    Author: {posts[0].name}
-                  </p>
-                  <BlockContent
-                    // style={{ maxWidth: '100px !important'}}
-                    blocks={posts[0].introduction}
-                    // imageOptions={{ w: 300, h: 100, fit: 'max' }}
-                    {...client.config()}
-                  />
-                  {/* <p style={{color: 'white', fontSize: '12px'}}>
-                      {introduction}
-                  </p> */}
-                </div>
-              </div>
-              
+                  gridColumn: '1 / 3',
+                  gridRow: '1',
+                  borderRight: '1px solid black',
+                  borderBottom: '1px solid black',
+                  maxHeight: '100px',
+                  // textAlign: 'center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                <h1 style={{marginRight: '14vw'}}>
+                  Yum Tash Food Lovers Home
+                </h1>
             </div>
+            <div style={{
+                  gridColumn: '3',
+                  gridRow:' 1 / 3',
+                  borderRight: '1px solid black',
+                  borderBottom: '1px solid black',
+                  height: '100px'
+                }}>
+              This is B
+            </div>
+              {/* Card */}
+            <div style={{
+              gridColumn: '1 / 3',
+              gridRow: '2',
+              borderRight: '1px solid black',
+              borderBottom: '1px solid black',
+            }}>
+              <div>
+                <div style={{
+                    
+                    marginLeft: '2vw', 
+                    backgroundColor: '#1C060A', 
+                    maxWidth: '50vw',
+                    minWidth: '50vw',
+                    minHeight: '20vw',
+                    maxHeight: '20vw',
+                    // borderRadius: '10px'
+                    }}
+                >
+                  <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                    <div>
+                      <h3 style={{
+                            marginLeft: '10px',
+                            color: 'white'
+                          }}
+                        >
+                          {posts[0].title}
+                      </h3>
+                      
+                      <img
+                        style={{marginLeft: '10px', marginTop: '30px'}}
+                        src={urlFor(posts[0].mainImage)
+                          .width(200)
+                          .url()}
+                      />
+                    </div>
+                    {/* CARD */}
+                    <div  style={{
+                        color: 'white', 
+                        marginTop: '1.5vw', 
+                        backgroundColor: '#226666', 
+                        padding: '5px 20px', 
+                        minWidth: '24vw',
+                        maxWidth: '28vw',
+                        maxHeight: '320px',
+                        borderRadius: '10px'
+                        }}
+                      >
+                      <h2>
+                        Description
+                      </h2>
+                      <p style={{color: 'white'}}>
+                        Author: {posts[0].name}
+                      </p>
+                      <BlockContent
+                        // style={{ maxWidth: '100px !important'}}
+                        blocks={posts[0].introduction}
+                        // imageOptions={{ w: 300, h: 100, fit: 'max' }}
+                        {...client.config()}
+                      />
+                      {/* <p style={{color: 'white', fontSize: '12px'}}>
+                          {introduction}
+                      </p> */}
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            
           </div>
-          
-      </div>
+      </div>  
       {/* SECOND PART */}
-      <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80%', height: '500px', display: 'flex', justifyContent: 'center'}}>
+      {/* <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80%', height: '500px', display: 'flex', justifyContent: 'center'}}>
         <div>
           <h2 style={{marginRight: '400px'}}>
             SISTE NYTT
@@ -99,7 +136,7 @@ const Index = (props) => {
             style={{maxHeight: '300px', marginLeft: '100px'}}
             src={dessert}
         />
-      </div>  
+      </div>   */}
     </div>
       
     )
@@ -134,3 +171,68 @@ export default Index
                   )
               )}
           </div> */}
+
+      //     <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80%', height: '700px', marginTop: '-1.2vw'}}>
+        //   <div>
+        //     <h1 style={{marginLeft: '17%'}}>Yum Tash Food Lovers Home</h1>
+        //     <div style={{
+        //         marginTop: '45px',
+        //         marginLeft: '17%', 
+        //         backgroundColor: '#1C060A', 
+        //         maxWidth: '50vw',
+        //         minWidth: '50vw',
+        //         minHeight: '20vw',
+        //         maxHeight: '20vw',
+        //         // borderRadius: '10px'
+        //         }}
+        //     >
+        //       <div style={{display: 'flex', justifyContent: 'space-around'}}>
+        //         <div>
+        //           <h3 style={{
+        //                 marginLeft: '10px',
+        //                 color: 'white'
+        //               }}
+        //             >
+        //               {posts[0].title}
+        //           </h3>
+                  
+        //           <img
+        //             style={{marginLeft: '10px', marginTop: '30px'}}
+        //             src={urlFor(posts[0].mainImage)
+        //               .width(200)
+        //               .url()}
+        //           />
+        //         </div>
+        //         {/* CARD */}
+        //         <div  style={{
+        //             color: 'white', 
+        //             marginTop: '1.5vw', 
+        //             backgroundColor: '#226666', 
+        //             padding: '5px 20px', 
+        //             minWidth: '24vw',
+        //             maxWidth: '28vw',
+        //             maxHeight: '320px',
+        //             borderRadius: '10px'
+        //             }}
+        //           >
+        //           <h2>
+        //             Description
+        //           </h2>
+        //           <p style={{color: 'white'}}>
+        //             Author: {posts[0].name}
+        //           </p>
+        //           <BlockContent
+        //             // style={{ maxWidth: '100px !important'}}
+        //             blocks={posts[0].introduction}
+        //             // imageOptions={{ w: 300, h: 100, fit: 'max' }}
+        //             {...client.config()}
+        //           />
+        //           {/* <p style={{color: 'white', fontSize: '12px'}}>
+        //               {introduction}
+        //           </p> */}
+        //         </div>
+        //       </div>
+        //     </div>
+        //  </div>
+          
+      // </div>
