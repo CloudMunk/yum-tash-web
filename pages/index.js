@@ -23,6 +23,7 @@ const Index = (props) => {
         <DefaultLayout>
           
         </DefaultLayout>
+        {/* FOLD */}
         <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80%', height: '700px'}}>
           <div>
             <h1 style={{marginLeft: '17%'}}>Yum Tash Food Lovers Home</h1>
@@ -30,8 +31,8 @@ const Index = (props) => {
                 marginTop: '45px',
                 marginLeft: '17%', 
                 backgroundColor: '#1C060A', 
-                maxWidth: '1000px',
-                minWidth: '900px',
+                maxWidth: '50vw',
+                minWidth: '50vw',
                 minHeight: '350px',
                 maxHeight: '350px'
                 }}
@@ -39,19 +40,31 @@ const Index = (props) => {
               <div style={{display: 'flex', justifyContent: 'space-around'}}>
                 <div>
                   <h3 style={{
-                      marginLeft: '-10px',
-                      color: 'white'
-                    }}>
-                      {posts[0].title}</h3>
+                        marginLeft: '10px',
+                        color: 'white'
+                      }}
+                    >
+                      {posts[0].title}
+                  </h3>
                   
                   <img
-                    style={{marginLeft: '-10px', marginTop: '30px'}}
+                    style={{marginLeft: '10px', marginTop: '30px'}}
                     src={urlFor(posts[0].mainImage)
                       .width(200)
                       .url()}
                   />
                 </div>
-                <div  style={{color: 'white', marginTop: '20px', backgroundColor: '#226666', padding: '5px 20px', minWidth: '240px'}}>
+                {/* CARD */}
+                <div  style={{
+                    color: 'white', 
+                    marginTop: '20px', 
+                    backgroundColor: '#226666', 
+                    padding: '5px 20px', 
+                    minWidth: '24vw',
+                    maxWidth: '28vw',
+                    maxHeight: '320px'
+                    }}
+                  >
                   <h2>
                     Description
                   </h2>
@@ -61,7 +74,7 @@ const Index = (props) => {
                   <BlockContent
                     // style={{ maxWidth: '100px !important'}}
                     blocks={posts[0].introduction}
-                    imageOptions={{ w: 300, h: 100, fit: 'max' }}
+                    // imageOptions={{ w: 300, h: 100, fit: 'max' }}
                     {...client.config()}
                   />
                   {/* <p style={{color: 'white', fontSize: '12px'}}>
