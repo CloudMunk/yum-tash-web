@@ -75,7 +75,7 @@ const Index = (props) => {
                   lineHeight: '1.6em'
                 }}
               >
-                A food blog with fresh, zesty recipes.
+                A food blog with fresh, zesty recipes. to
               </h3>
             </div>
             {/* Card */}
