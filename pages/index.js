@@ -65,7 +65,7 @@ const Index = (props) => {
                         borderRadius: '10px'
                       }}
                   >
-                    <Card />
+                    <Card {...props} />
                   </div>
               </div>
             </div>
