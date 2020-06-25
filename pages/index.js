@@ -16,23 +16,26 @@ const Index = (props) => {
     const { 
       introduction = [],
       posts = [], 
-      name 
+      name,
+      slug
     } = props
     return (
     <div>
         <DefaultLayout />
         {/* FOLD */}
         <div style={{
-            backgroundColor: '#E0ECF7', 
+            // backgroundImage: 'linear-gradient(to right, rgb(0, 154, 164), rgb(21, 32, 33))',
+            // backgroundColor: '#E0ECF7', 
             margin: '0 auto', 
-            width: '80vw', 
+            width: '100vw', 
             height: '40vw', 
            
         }}>
           <div style={{
             display: 'grid',
             gridTemplateColumns: '26.6vw 26.6vw 26.6vw',
-            backgroundColor: '#E0ECF7',
+            // backgroundColor: '#E0ECF7',
+            backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
             color: '#444'
           }}>
             {/* THIS IS A */}
@@ -54,6 +57,7 @@ const Index = (props) => {
                   Yum Tash Food Lovers Home
                 </h1>
             </div>
+            {/* THIS IS B */}
             <div style={{
                   gridColumn: '3',
                   gridRow:' 1',
@@ -98,14 +102,28 @@ const Index = (props) => {
                   >
                     <div style={{display: 'flex', justifyContent: 'space-around'}}>
                       <div>
-                        <h3 style={{
-                              marginLeft: '10px',
-                              color: 'white'
-                            }}
-                          >
-                            {posts[0].title}
-                        </h3>
-                        
+                        {/* <div>
+                          {posts.map(
+                            ({ _id, title = '', slug = '', _updatedAt = '' }) =>
+                              slug && (
+                                <li key={_id}>
+                                  <Link href="/post/[slug]" as={`/post/${slug.current}`}>
+                                    <a>{title}</a>
+                                  </Link>{' '}
+                                  ({new Date(_updatedAt).toDateString()})
+                                </li>
+                              )
+                          )}
+                        </div> */}
+                        {/* <Link href="/post/[slug]" as={`/post/${slug[0]}`}> */}
+                          <h3 style={{
+                                marginLeft: '10px',
+                                color: 'white'
+                              }}
+                            >
+                              {posts[0].title}
+                          </h3>
+                        {/* </Link> */}
                         <img
                           style={{marginLeft: '10px', marginTop: '30px'}}
                           src={urlFor(posts[0].mainImage)
@@ -147,24 +165,10 @@ const Index = (props) => {
             </div>
           </div>
       </div>  
-      {/* SECOND PART */}
-      {/* <div style={{backgroundColor: '#E0ECF7', margin: '0 auto', width: '80%', height: '500px', display: 'flex', justifyContent: 'center'}}>
-        <div>
-          <h2 style={{marginRight: '400px'}}>
-            SISTE NYTT
-          </h2>
-            
-        </div>
-        <img
-            style={{maxHeight: '300px', marginLeft: '100px'}}
-            src={dessert}
-        />
-      </div>   */}
     </div>
       
     )
 }
-// Post.getInitialProps = async function (context) {
 
 Index.getInitialProps = async () => ({
     posts: await client.fetch(groq`
