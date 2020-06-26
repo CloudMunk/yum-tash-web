@@ -8,6 +8,8 @@
     min-height: 20vw;
     font-family: 'Fira Sans', sans-serif;
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     border-radius: 25px;
     width: 45vw;
     margin-left: 5vw;
@@ -23,19 +25,20 @@
 
 .blog_slider {
     width: 95%;
-    position: relative;
-    max-width: 800px;
+    // position: relative;
+    max-width: 700px;
     min-height: 200px;
-    max-height: 300px;
-    margin: auto;
+    max-height: 280px;
+    // margin: auto;
+    margin-top: 35px;
     // background: black;
-    background-image: linear-gradient(264deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(9,9,40,1) 47%, rgba(0,212,255,1) 100%);
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
     padding: 25px;
     border-radius: 25px;
     height: 400px;
-    transition: all .3s;
-    color: black;
+    // transition: all .3s;
+    // color: black;
   
    
   @media screen and (max-width: 992px) {
@@ -56,8 +59,6 @@
   
   &__item {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
     
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -118,7 +119,6 @@
         height: 18vw;
         object-fit: fill;
         display: block;
-        
         border-radius: 20px;
         transition: all .3s;
     }
@@ -163,8 +163,8 @@
   }
   
   &__code {
-    color: #7b7992;
-    margin-bottom: 15px;
+    color: white;
+    
     display: block;
     font-weight: 500;
     z-index: 3;
@@ -173,20 +173,20 @@
   &__title {
     font-size: 24px;
     font-weight: 700;
-    color: #0d0925;
-    margin-bottom: 20px;
-    z-index: 300;
+    color: white;
+    margin-top: -4vw;
   }
   
   &__text {
-    color: #4e4a67;
-    line-height: 1.5em;
+    color: white;
+    line-height: 1.2em;
+    margin-top: 1vw;
   }
   
   &__button {
     display: inline-flex;
-    position: relative;
-    margin-top: 5vw;
+    position: absolute;
+    margin-top: 2vw;
     margin-left: 16vw;
     background-image: linear-gradient(264deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 15px 35px;
@@ -197,7 +197,7 @@
     font-weight: 500;
     justify-content: center;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
     @media screen and (max-width: 576px) {
       width: 100%;

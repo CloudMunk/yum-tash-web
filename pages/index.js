@@ -48,8 +48,8 @@ const Index = (props) => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  borderBottom: '1px solid #D9D9D9',
-                  borderRight: '1px solid #D9D9D9'
+                  borderBottom: '1px solid black',
+                  borderRight: '1px solid black'
                 }}>
                
                 <div>
@@ -65,7 +65,9 @@ const Index = (props) => {
                         borderRadius: '10px'
                       }}
                   >
+                    {/* CARD */}
                     <Card {...props} />
+                   
                   </div>
               </div>
             </div>
@@ -75,7 +77,7 @@ const Index = (props) => {
                   gridRow:' 1',
                   minHeight: '200px',
                   display: 'flex',
-                  borderBottom: '1px solid #D9D9D9'
+                  borderBottom: '1px solid black'
                 }}>
               <h3
                 style={{
@@ -95,7 +97,6 @@ const Index = (props) => {
                 sesongbaserte, da vi tenker ekstra på miljøet.
               </h3>
             </div>
-            {/* Card */}
               <div style={{
                 gridColumn: '1 / 3',
                 gridRow: '3',
