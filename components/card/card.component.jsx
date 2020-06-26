@@ -23,9 +23,9 @@ const Card = (props) => {
                         <div className={styles.blog_slider__item}>
                             <div className={styles.blog_slider__img}>
                                 <img
-                                    style={{marginLeft: '10px', marginTop: '30px', zIndex: '1000'}}
+                                    style={{ zIndex: '1000'}}
                                     src={urlFor(posts[0].mainImage)
-                                    .width(200)
+                                    .width(800)
                                     .url()}
                                 />
                             </div>
