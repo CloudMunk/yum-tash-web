@@ -67,7 +67,7 @@ const Card = (props) => {
                                         {posts[1].title}
                                     </div>
                                     <div className={styles.blog_slider__text}>
-                                        
+                                        {/* Make an if statement that puts three ... if intro reaches certain length */}
                                         <BlockContent
                                             // style={{ maxWidth: '100px !important'}}
                                             blocks={posts[1].introduction}

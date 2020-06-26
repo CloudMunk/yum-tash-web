@@ -30,7 +30,7 @@
     min-height: 200px;
     max-height: 280px;
     // margin: auto;
-    margin-top: 35px;
+    margin-top: 45px;
     // background: black;
     background-image: linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(9,9,40,1) 47%, rgba(0,212,255,1) 100%);
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
@@ -174,7 +174,7 @@
     font-size: 24px;
     font-weight: 700;
     color: white;
-    margin-top: -4vw;
+    margin-top: -5vw;
   }
   
   &__text {
@@ -186,7 +186,8 @@
   &__button {
     display: inline-flex;
     position: absolute;
-    margin-top: 2vw;
+    // margin-top: 2vw;
+    // top: 50px;
     margin-left: 16vw;
     background-image: linear-gradient(264deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 15px 35px;
