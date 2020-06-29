@@ -1,0 +1,21 @@
+.body {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.leftSide {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+.mainImage {
+    max-width: 580px;
+}
+
+
+.title {
+    color: black;
+    margin-top: 45px;
+}

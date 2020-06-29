@@ -1,4 +1,4 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 
 import styles from './card.module.scss'
 import imageUrlBuilder from '@sanity/image-url'
@@ -11,12 +11,8 @@ function urlFor (source) {
 }
 
 const Card = (props) => {
-    const { 
-        introduction = [],
-        posts = [], 
-        name,
-        slug
-      } = props
+    const { posts = [] } = props
+    console.log(posts[0].slug)
       return (
             <div className={styles.bodyCard}>
                 <div className={styles.blog_slider}>
@@ -31,20 +27,22 @@ const Card = (props) => {
                                 />
                             </div>
                             <div className={styles.cardText}>
-                                    {/* <span className={styles.blog_slider__code}>{posts[0].publishedAt}</span> */}
-                                    <div className={styles.blog_slider__title}>
-                                        {posts[0].title}
-                                    </div>
-                                    <div className={styles.blog_slider__text}>
-                                        
-                                        <BlockContent
-                                            // style={{ maxWidth: '100px !important'}}
-                                            blocks={posts[0].introduction}
-                                            // imageOptions={{ w: 300, h: 100, fit: 'max' }}
-                                            {...client.config()}
-                                        />
-                                    </div>
+                                {/* <span className={styles.blog_slider__code}>{posts[0].publishedAt}</span> */}
+                                <div className={styles.blog_slider__title}>
+                                    {posts[0].title}
+                                </div>
+                                <div className={styles.blog_slider__text}>
+                                    
+                                    <BlockContent
+                                        // style={{ maxWidth: '100px !important'}}
+                                        blocks={posts[0].introduction}
+                                        // imageOptions={{ w: 300, h: 100, fit: 'max' }}
+                                        {...client.config()}
+                                    />
+                                </div>
+                                <Link href={`/post/${posts[0].slug.current}`}>
                                     <a href="#" className={styles.blog_slider__button}>LES MER</a>
+                                </Link>
                             </div>
                         </div>  
                     </div>
@@ -75,7 +73,9 @@ const Card = (props) => {
                                             {...client.config()}
                                         />
                                     </div>
-                                    <a href="#" className={styles.blog_slider__button}>LES MER</a>
+                                    <Link href={`/post/${posts[1].slug.current}`}>
+                                        <a href="#" className={styles.blog_slider__button}>LES MER</a>
+                                    </Link>
                             </div>
                         </div>  
                     </div>
@@ -91,7 +91,8 @@ Card.getInitialProps = async () => ({
         mainImage, 
         secondImage,
         publishedAt,
-        title, 
+        title,
+        slug,
         "name": author->name, }
     `)
 })

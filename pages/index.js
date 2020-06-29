@@ -116,7 +116,8 @@ Index.getInitialProps = async () => ({
         introduction, 
         mainImage, 
         secondImage, 
-        title, 
+        title,
+        slug,
         "name": author->name, }
     `)
 })
