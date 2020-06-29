@@ -1,21 +1,26 @@
 .body {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 .leftSide {
-    margin-left: 10vw;
+    // margin-left: 10vw;
     display: flex;
     flex-direction: column;
 }
 .mainImage {
     max-width: 580px;
 }
-
-
+.paragraph {
+    max-width: 580px;
+}
+.profilePic {
+    border-radius: 55%;
+}
 .title {
     color: black;
     margin-top: 45px;
+    font-size: 34px;
 }

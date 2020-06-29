@@ -22,12 +22,14 @@ const Post = (props) => {
     categories,
     authorImage,
     mainImage,
-    body = []
+    body = [],
+    introduction = []
   } = props
   return (
     <div>
       <Header />
       <article className={styles.body}>
+        <div></div>
         <div className={styles.leftSide}>
           <h1 className={styles.title}>{title}</h1>
           <img
@@ -36,23 +38,17 @@ const Post = (props) => {
               .width(500)
               .url()}
           />
-          <span>By {name}</span>
-          {categories && (
-            <ul>
-              Posted in
-              {categories.map(category => <li key={category}>{category}</li>)}
-            </ul>
-          )}
-          {authorImage && (
-            <div>
-              <img
-                src={urlFor(authorImage)
-                  .width(50)
-                  .url()}
-              />
-            </div>
-          )}
+          
+          
+         
           <BlockContent
+            className={styles.paragraph}
+            blocks={introduction}
+            imageOptions={{ w: 320, h: 240, fit: 'max' }}
+            {...client.config()}
+          />
+          <BlockContent
+            className={styles.paragraph}
             blocks={body}
             imageOptions={{ w: 320, h: 240, fit: 'max' }}
             {...client.config()}
@@ -60,6 +56,23 @@ const Post = (props) => {
         </div>
         <div>
             <h2>This is the right side</h2>
+            {categories && (
+            <ul>
+              Stikkord / Hashtags
+              {categories.map(category => <p key={category}>{category}</p>)}
+            </ul>
+          )}
+           {authorImage && (
+            <div>
+              <img
+                className={styles.profilePic}
+                src={urlFor(authorImage)
+                  .width(100)
+                  .url()}
+              />
+            </div>
+          )}
+          <span>Av {name}</span>
         </div>
         
       </article>
