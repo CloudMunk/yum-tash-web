@@ -30,10 +30,10 @@ export default class CustomDocument extends Document {
           {/* <link rel="shortcut icon" type="image/x-icon" href={FavIcon} /> */}
 
           {/* We only want to add the scripts if in production */}
-          <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"/>
         </Head>
         <body>
-        {/* <HeaderContainer /> */}
           <Main />
           <NextScript />
         </body>

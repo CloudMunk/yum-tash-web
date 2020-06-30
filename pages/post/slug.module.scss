@@ -5,6 +5,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
 .leftSide {
     // margin-left: 10vw;
     display: flex;
@@ -16,8 +17,10 @@
 .paragraph {
     max-width: 580px;
 }
+
 .introduction {
     max-width: 580px;
+    
 }
 .profilePic {
     border-radius: 55%;
@@ -27,9 +30,12 @@
     margin-top: 45px;
     font-size: 34px;
 }
-
+.titles {
+    font-family: 'Archer SSm A';
+}
 .ingredients {
     display: grid;
+    max-width: 580px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;

@@ -1,60 +1,37 @@
+.HeaderContainer {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(2, 1fr) 2fr repeat(2, 1fr) 1.2fr;
+    grid-template-rows: 1fr 2fr 0.3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 350px;
+}
 .H1Container {
     color: black;
     cursor: pointer;
     font-size: 42px;
 }
-
-.HeaderContainer {
+.Anmeldelser {
+    color: black;
+    font-family: '"Archer SSm A",';
+    cursor: pointer;
+    float: right;
+}
+.logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188));
-    color: black;
     font-family: 'Major Mono Display';
-    height: 350px;
-    width: 100vw;
 }
 
 .MenuItemContainer {
-    display: flex;
-    width: 200px;
-    height: 100px;
     color: black;
     font-family: '"Archer SSm A",';
-    margin-top: 20%;
     cursor: pointer;
+    float: right;
 }
-.Anmeldelser {
-    display: flex;
-    width: 150px;
-    height: 100px;
-    color: black;
-    font-family: '"Archer SSm A",';
-    margin-top: 20.2%;
-    cursor: pointer;
-}
-.ReiseContainer {
-    display: flex;
-    width: 20px;
-    height: 100px;
-    color: black;
-    font-family: '"Archer SSm A",';
-    margin-top: 20%;
-    cursor: pointer;
-}
-.SignaturRetter {
-    display: flex;
-    width: 150px;
-    height: 100px;
-    color: black;
-    font-family: '"Archer SSm A",';
-    margin-top: 20%;
-    margin-left: 4.5%;
-}
-// Dropdown
+// // Dropdown
 
 .dropdown {
-    margin-top: 18%;
     display: inline-block;
 }
 .dropdownContent {
@@ -73,6 +50,7 @@
   }
   .dropdown:hover .dropdownContent {
     display: block;
-    margin-top: -4.7%;
+    margin-top: 3vw;
+    margin-left: 7vw;
   }
 // ----------------------------------

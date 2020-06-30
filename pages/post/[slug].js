@@ -23,7 +23,15 @@ const Post = (props) => {
     authorImage,
     mainImage,
     body = [],
-    introduction = []
+    introduction = [],
+    titleA,
+    ingredientsA = [],
+    titleB,
+    ingredientsB = [],
+    titleC,
+    ingredientsC = [],
+    titleD,
+    ingredientsD = []
   } = props
   return (
     <div>
@@ -49,73 +57,40 @@ const Post = (props) => {
           />
           <div className={styles.ingredients}>
               <div>
-                <h3>Title A</h3>
-                <ul>
-                  <li>
-                    item 1
-                  </li>
-                  <li>
-                    item 2
-                  </li>
-                  <li>
-                    item 3
-                  </li>
-                  <li>
-                    item 4
-                  </li>
-                </ul>
-                
+                <h3 className={styles.titles}>{titleA}</h3>
+                <BlockContent
+                  className={styles.ingredientsA}
+                  blocks={ingredientsA}
+                  imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                  {...client.config()}
+                />
               </div>
               <div>
-              <h3>Title B</h3>
-                <ul>
-                  <li>
-                    item 1
-                  </li>
-                  <li>
-                    item 2
-                  </li>
-                  <li>
-                    item 3
-                  </li>
-                  <li>
-                    item 4
-                  </li>
-                </ul>
+              <h3 className={styles.titles}>{titleB}</h3>
+                <BlockContent
+                  className={styles.ingredientsA}
+                  blocks={ingredientsB}
+                  imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                  {...client.config()}
+                />
               </div>
               <div>
-              <h3>Title C</h3>
-                <ul>
-                  <li>
-                    item 1
-                  </li>
-                  <li>
-                    item 2
-                  </li>
-                  <li>
-                    item 3
-                  </li>
-                  <li>
-                    item 4
-                  </li>
-                </ul>
+              <h3 className={styles.titles}>{titleC}</h3>
+              <BlockContent
+                  className={styles.ingredientsA}
+                  blocks={ingredientsC}
+                  imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                  {...client.config()}
+                />
               </div>
               <div>
-              <h3>Title D</h3>
-                <ul>
-                  <li>
-                    item 1
-                  </li>
-                  <li>
-                    item 2
-                  </li>
-                  <li>
-                    item 3
-                  </li>
-                  <li>
-                    item 4
-                  </li>
-                </ul>
+              <h3 className={styles.titles}>{titleD}</h3>
+                <BlockContent
+                    className={styles.ingredientsA}
+                    blocks={ingredientsD}
+                    imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                    {...client.config()}
+                  />
               </div>
           </div>
           <BlockContent
@@ -159,6 +134,14 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   "authorImage": author->image,
   mainImage,
   introduction,
+  titleA,
+  ingredientsA,
+  titleB,
+  ingredientsB,
+  titleC,
+  ingredientsC,
+  titleD,
+  ingredientsD,
   body
 }`
 
