@@ -22,6 +22,13 @@ const Post = (props) => {
     categories,
     authorImage,
     mainImage,
+    secondBody,
+    secondImage,
+    thirdBody,
+    thirdImage,
+    fourthBody,
+    fourthImage,
+    fifthImage,
     body = [],
     introduction = [],
     titleA,
@@ -31,7 +38,8 @@ const Post = (props) => {
     titleC,
     ingredientsC = [],
     titleD,
-    ingredientsD = []
+    ingredientsD = [],
+    
   } = props
   return (
     <div>
@@ -99,7 +107,55 @@ const Post = (props) => {
             imageOptions={{ w: 320, h: 240, fit: 'max' }}
             {...client.config()}
           />
+
+          <h2>SLIK GJØR DU</h2>
+          <img
+              className={styles.mainImage}
+              src={urlFor(secondImage)
+              .width(500)
+              .url()}
+          />    
+          <h2>{title}</h2>
+          <BlockContent
+            className={styles.paragraph}
+            blocks={secondBody}
+            imageOptions={{ w: 320, h: 240, fit: 'max' }}
+            {...client.config()}
+          />
+          <img
+              className={styles.mainImage}
+              src={urlFor(thirdImage)
+              .width(500)
+              .url()}
+          /> 
+          <BlockContent
+            className={styles.paragraph}
+            blocks={thirdBody}
+            imageOptions={{ w: 320, h: 240, fit: 'max' }}
+            {...client.config()}
+          />
+          <img
+              className={styles.mainImage}
+              src={urlFor(fourthImage)
+              .width(500)
+              .url()}
+          /> 
+          <BlockContent
+            className={styles.paragraph}
+            blocks={fourthBody}
+            imageOptions={{ w: 320, h: 240, fit: 'max' }}
+            {...client.config()}
+          />
+          <img
+              className={styles.mainImage}
+              src={urlFor(fifthImage)
+              .width(500)
+              .url()}
+          />
+
         </div>
+
+        {/* RIGHT SIDE */}
         <div>
             <h2>This is the right side</h2>
             {categories && (
@@ -133,7 +189,14 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   "categories": categories[]->title,
   "authorImage": author->image,
   mainImage,
+  secondImage,
+  secondBody,
   introduction,
+  thirdBody,
+  thirdImage,
+  fourthImage,
+  fourthBody,
+  fifthImage,
   titleA,
   ingredientsA,
   titleB,
