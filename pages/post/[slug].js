@@ -42,11 +42,82 @@ const Post = (props) => {
           
          
           <BlockContent
-            className={styles.paragraph}
+            className={styles.introduction}
             blocks={introduction}
             imageOptions={{ w: 320, h: 240, fit: 'max' }}
             {...client.config()}
           />
+          <div className={styles.ingredients}>
+              <div>
+                <h3>Title A</h3>
+                <ul>
+                  <li>
+                    item 1
+                  </li>
+                  <li>
+                    item 2
+                  </li>
+                  <li>
+                    item 3
+                  </li>
+                  <li>
+                    item 4
+                  </li>
+                </ul>
+                
+              </div>
+              <div>
+              <h3>Title B</h3>
+                <ul>
+                  <li>
+                    item 1
+                  </li>
+                  <li>
+                    item 2
+                  </li>
+                  <li>
+                    item 3
+                  </li>
+                  <li>
+                    item 4
+                  </li>
+                </ul>
+              </div>
+              <div>
+              <h3>Title C</h3>
+                <ul>
+                  <li>
+                    item 1
+                  </li>
+                  <li>
+                    item 2
+                  </li>
+                  <li>
+                    item 3
+                  </li>
+                  <li>
+                    item 4
+                  </li>
+                </ul>
+              </div>
+              <div>
+              <h3>Title D</h3>
+                <ul>
+                  <li>
+                    item 1
+                  </li>
+                  <li>
+                    item 2
+                  </li>
+                  <li>
+                    item 3
+                  </li>
+                  <li>
+                    item 4
+                  </li>
+                </ul>
+              </div>
+          </div>
           <BlockContent
             className={styles.paragraph}
             blocks={body}
@@ -87,6 +158,7 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   "categories": categories[]->title,
   "authorImage": author->image,
   mainImage,
+  introduction,
   body
 }`
 
