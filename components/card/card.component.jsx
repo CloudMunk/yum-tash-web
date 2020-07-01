@@ -72,13 +72,17 @@ const Card = (props) => {
                                             // imageOptions={{ w: 300, h: 100, fit: 'max' }}
                                             {...client.config()}
                                         />
+                                        
                                     </div>
-                                    <Link href={`/post/${posts[1].slug.current}`}>
-                                        <a href="#" className={styles.blog_slider__button}>LES MER</a>
-                                    </Link>
+                                    
                             </div>
                         </div>  
                     </div>
+                    <Link href={`/post/${posts[1].slug.current}`}>
+                        <div className={styles.blog_slider__button}>
+                            <span>LES MER</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
       )

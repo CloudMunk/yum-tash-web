@@ -3,6 +3,9 @@ import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import client from '../../client'
 
+// Social Share buttons
+// import { FacebookShareButton } from 'react-share'
+
 import styles from './slug.module.scss'
 
 // Components
@@ -54,6 +57,7 @@ const Post = (props) => {
               .width(500)
               .url()}
           />
+          {/* <FacebookShareCount url={shareUrl} /> */}
           
           
          

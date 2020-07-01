@@ -35,76 +35,30 @@ const Index = (props) => {
         }}>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: '26.6vw 26.6vw 26.6vw',
+            gridTemplateColumns: '1fr 1.5fr 1.5fr 1.5fr',
+            gridTemplateRows: '100px 500px',
+            height: '40vw',
             // backgroundColor: '#E0ECF7',
             // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
             color: '#444'
           }}>
-            {/* THIS IS A */}
-            <div style={{
-                  gridColumn: '1 / 3',
-                  gridRow: '1',
-                  minHeight: '200px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  borderBottom: '1px solid black',
-                  borderRight: '1px solid black'
-                }}>
-               
-                <div>
-                  <div style={{
-                        marginBottom: '2vw',
-                        marginLeft: '2vw', 
-                        // backgroundColor: 'black',
-                        marginTop: '2vw', 
-                        maxWidth: '50vw',
-                        minWidth: '50vw',
-                        minHeight: '20vw',
-                        maxHeight: '20vw',
-                        borderRadius: '10px'
-                      }}
-                  >
-                    {/* CARD */}
-                    <Card {...props} />
-                   
-                  </div>
-              </div>
+            <div></div>
+            <div style={{borderBottom: '0.8px solid #808080',borderRight: '0.8px solid #808080'}}></div>
+            <div style={{borderBottom: '0.8px solid #808080'}}></div>
+            <div></div>
+            <div></div>
+            <div style={{borderRight:'0.8px solid #808080'}}>
+              {/* CARD */}
+              <Card {...props} />
             </div>
-            {/* THIS IS B */}
-            <div style={{
-                  gridColumn: '3',
-                  gridRow:' 1',
-                  minHeight: '200px',
-                  display: 'flex',
-                  borderBottom: '1px solid black'
-                }}>
-              <h3
-                style={{
-                  marginTop: '4vw',
-                  paddingTop: '16px',
-                  fontFamily: "Archer SSm A",
-                  fontSize: '17px',
-                  textAlign: 'center',
-                  paddingLeft: '15%',
-                  paddingRight: '15%',
-                  letterSpacing: '0.19em',
-                  fontWeight: '900',
-                  lineHeight: '1.6em'
-                }}
-              >
-                I denne bloggen tar vi for oss retter som er 
-                sesongbaserte, da vi tenker ekstra på miljøet.
-              </h3>
-            </div>
-              <div style={{
-                gridColumn: '1 / 3',
-                gridRow: '3',
-              }}>
-                
-            </div>
+            <div></div>
+            <div></div>
           </div>
-      </div>  
+
+
+
+
+        </div>  
     </div>
       
     )
