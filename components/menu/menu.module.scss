@@ -17,6 +17,9 @@
     cursor: pointer;
     float: right;
 }
+.Anmeldelser:hover {
+    border-bottom: 1px solid black;
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -29,6 +32,13 @@
     cursor: pointer;
     float: right;
 }
+.MenuItemContainer:hover {
+    border-bottom: 1px solid black;
+}
+.ReiseContainer:hover {
+    
+}
+
 // // Dropdown
 
 .dropdown {

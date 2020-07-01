@@ -44,7 +44,23 @@ const Index = (props) => {
           }}>
             <div></div>
             <div style={{borderBottom: '0.8px solid #808080',borderRight: '0.8px solid #808080'}}></div>
-            <div style={{borderBottom: '0.8px solid #808080'}}></div>
+            <div style={{borderBottom: '0.8px solid #808080'}}>
+            <h3
+                  style={{
+                    fontFamily: "Archer SSm A",
+                    fontSize: '17px',
+                    textAlign: 'center',
+                    paddingLeft: '15%',
+                    paddingRight: '15%',
+                    letterSpacing: '0.19em',
+                    fontWeight: '900',
+                    lineHeight: '1.6em',
+                    paddinBottom: '2vw'
+                  }}
+                >
+                En matblogg med fokus på miljø & gode opplevelser.
+              </h3>
+            </div>
             <div></div>
             <div></div>
             <div style={{borderRight:'0.8px solid #808080'}}>
