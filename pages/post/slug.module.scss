@@ -1,18 +1,39 @@
 .body {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 1fr 2fr 1.5fr 1.5fr;
+    grid-template-rows: 100px 250vw;
+    height: 40vw;
+    // backgroundColor: '#E0ECF7',
+    // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
+    color: #444;
 }
 
 .leftSide {
-    // margin-left: 10vw;
+    border-right: 1px solid black;
     display: flex;
     flex-direction: column;
 }
+.rightSide {
+    display: flex;
+    flex-direction: column;
+}
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin-top: 35px;
+}
+.tags {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: -10px;
+}
 .mainImage {
     max-width: 580px;
+    padding-left: 10px;
+    padding-top: 20px;
 }
 .paragraph {
     max-width: 580px;
@@ -24,11 +45,18 @@
 }
 .profilePic {
     border-radius: 55%;
+    margin-left: 9vw;
+    margin-top: 7vw;
+}
+.backgroundInfo {
+    margin-left: 2vw;
+    max-width: 350px;
+    margin-top: 2vw;
 }
 .title {
     color: black;
     margin-top: 45px;
-    font-size: 34px;
+    font-size: 28px;
 }
 .titles {
     font-family: 'Archer SSm A';
@@ -40,4 +68,8 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+.sidebar {
+    width: 100px;
+    background-image: url('https://cdn.loveandlemons.com/wp-content/themes/loveandlemons5/images/sidebar-sep.png');
 }

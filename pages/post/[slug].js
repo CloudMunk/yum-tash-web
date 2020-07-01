@@ -46,21 +46,48 @@ const Post = (props) => {
   } = props
   return (
     <div>
+      <div style={{
+            width: '100%',
+            height: '25px',
+            backgroundImage: 'url(https://i.imgur.com/fF3cAue.png)',
+            backgroundSize: '30px 15px',
+            backgroundRepeat: 'repeat-x',
+            backgroundPositionY: '0px'
+        }}></div>
       <Header />
       <article className={styles.body}>
+        <div>1</div>
+        <div style={{borderRight:'0.8px solid #808080', borderBottom: '0.8px solid #808080'}}>
+          <h3 className={styles.title}>{title}</h3>
+        </div>
+        <div style={{borderBottom: '0.8px solid #808080'}}>
+        <h3
+                  style={{
+                    fontFamily: "Archer SSm A",
+                    fontSize: '17px',
+                    textAlign: 'center',
+                    paddingLeft: '15%',
+                    paddingRight: '15%',
+                    letterSpacing: '0.19em',
+                    fontWeight: '900',
+                    lineHeight: '1.6em',
+                    paddinBottom: '2vw'
+                  }}
+                >
+                En matblogg med fokus på miljø & gode opplevelser.
+              </h3>
+        </div>
         <div></div>
-        <div className={styles.leftSide}>
-          <h1 className={styles.title}>{title}</h1>
-          <img
+        <div></div>
+        <div style={{borderRight:'0.8px solid #808080'}}>
+        <img
               className={styles.mainImage}
               src={urlFor(mainImage)
               .width(500)
               .url()}
           />
-          {/* <FacebookShareCount url={shareUrl} /> */}
-          
-          
-         
+          <br />
+          <span>Av {name}</span>
           <BlockContent
             className={styles.introduction}
             blocks={introduction}
@@ -156,31 +183,31 @@ const Post = (props) => {
               .width(500)
               .url()}
           />
-
         </div>
-
-        {/* RIGHT SIDE */}
         <div>
-            <h2>This is the right side</h2>
-            {categories && (
-            <ul>
-              Stikkord / Hashtags
-              {categories.map(category => <p key={category}>{category}</p>)}
+          <img
+              className={styles.profilePic}
+              src={urlFor(authorImage)
+                .width(100)
+                .url()}
+            />
+            <p className={styles.backgroundInfo}>
+              Her går litt basic info og background story om Natasha. 
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type 
+              specimen book. It has survived not only five centuries, but also the leap 
+              into electronic typesetting, remaining essentially unchanged. It was 
+              popularised in the 1960s with the release of Letraset sheets containing 
+              Lorem Ipsum passages, and more recently with desktop publishing software 
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            
+            <ul className={styles.hashtags}>
+              {categories.map(category => <p className={styles.tags} key={category}>{category}</p>)}
             </ul>
-          )}
-           {authorImage && (
-            <div>
-              <img
-                className={styles.profilePic}
-                src={urlFor(authorImage)
-                  .width(100)
-                  .url()}
-              />
-            </div>
-          )}
-          <span>Av {name}</span>
         </div>
-        
+        <div></div>
       </article>
     </div>
       
