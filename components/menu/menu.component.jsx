@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import styles from './menu.module.scss'
 import nightOut from '../../assets/nightOut.png'
+import happyDonut from '../../assets/happyDonut3.png'
 
 const Header = () => (
      <header className={styles.HeaderContainer}>
@@ -22,6 +23,11 @@ const Header = () => (
               /> */}
          </div>
          <div className={styles.logo}>
+            <img
+                style={{ width: 'auto', height: '70px', marginTop: '0.8vw', opacity: '1', borderRadius: '25px'}}
+                src={happyDonut}
+                alt="tasty food illustration"
+              />
              {/* LOGO */}
              <Link href="/" as={`/`}>
                  <h1 className={styles.H1Container}>Yum Tash</h1>

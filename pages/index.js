@@ -59,6 +59,22 @@ const Index = (props) => {
                 borderBottom: '0.8px solid #808080',
                 borderRight: '0.8px solid #808080'
             }}>
+              <h3
+                  style={{
+                    fontFamily: "Archer SSm A",
+                    fontSize: '24px',
+                    textAlign: 'center',
+                    paddingLeft: '15%',
+                    paddingRight: '15%',
+                    letterSpacing: '0.19em',
+                    fontWeight: '900',
+                    lineHeight: '2em',
+                    paddinBottom: '2vw',
+                    marginBottom: '2vw'
+                  }}
+                >
+                Unike smaker, unike opplevelser. <br/> Velkommen til Yum Tash.
+              </h3>
             {/* <img
                 style={{ width: '200px'}}
                 src={nightOut}
@@ -76,7 +92,8 @@ const Index = (props) => {
                     letterSpacing: '0.19em',
                     fontWeight: '900',
                     lineHeight: '1.6em',
-                    paddinBottom: '2vw'
+                    paddinBottom: '2vw',
+                    marginBottom: '4vw'
                   }}
                 >
                 En matblogg med fokus på miljø & gode opplevelser.
@@ -85,7 +102,7 @@ const Index = (props) => {
             </div>
             <div></div>
             <div></div>
-            <div style={{borderRight:'0.8px solid #808080'}}>
+            <div style={{borderRight:'0.8px solid #808080', height: '80vw'}}>
               {/* CARD */}
               <Card {...props} />
             </div>
