@@ -81,7 +81,7 @@ const Index = (props) => {
                 alt="tasty food illustration"
               /> */}
             </div>
-            <div style={{borderBottom: '0.8px solid #808080'}}>
+            <div style={{borderBottom: '0.8px solid #808080', display: 'flex', alignItems: 'center'}}>
             <h3
                   style={{
                     fontFamily: "Archer SSm A",
@@ -92,8 +92,7 @@ const Index = (props) => {
                     letterSpacing: '0.19em',
                     fontWeight: '900',
                     lineHeight: '1.6em',
-                    paddinBottom: '2vw',
-                    marginBottom: '4vw'
+                    paddinBottom: '2vw'
                   }}
                 >
                 En matblogg med fokus på miljø & gode opplevelser.
@@ -112,7 +111,9 @@ const Index = (props) => {
                 src={orange} 
                 alt="orange" 
               />
-              
+              <h2
+                style={{marginLeft: '6vw'}}
+              >Populære Retter</h2>
             </div>
             <div></div>
           </div>
