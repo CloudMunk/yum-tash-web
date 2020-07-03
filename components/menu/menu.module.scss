@@ -5,14 +5,40 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 350px;
+    z-index: 3;
+    background-color: #121212;
+    color: whitesmoke;
 }
 .H1Container {
-    color: black;
+    text-transform: uppercase;
+	background: linear-gradient(to right, #fd1d1d 0%, #C5D068 28%, #a3eaf2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
     cursor: pointer;
     font-size: 42px;
 }
+
+// Gradients
+
+// 2: linear-gradient(to right, #fd1d1d 0%, #C5D068 28%, #a3eaf2 100%);
+// 3: linear-gradient(to right, #fd1d1d 0%, #C5D068 28%, #324a4d 100%);
+// 4: background: linear-gradient(to right, #fd1d1d 0%, #C5D068 28%, #2E215B 100%);
+// 4: background-color: #EDCCA6;
+// 5: background-color: #FFB175;
+// 5: background: linear-gradient(to right, #fd1d1d 0%, #2E215B 48%, #3616aa 100%);
+// 6: background-color: #B2E545;
+// 6: background: linear-gradient(to right, #fd1d1d 0%, #2E215B 48%, #3616aa 100%);
+// 7: background-color: #5841A9;
+// 7: background: linear-gradient(to right, #fd1d1d 0%, #2E215B 48%, #F5944A 100%);
+// 8: background-color: #50AFA8;
+// 8: background: linear-gradient(to right, #F5D64A 0%, #B6167A 48%, #D160A7 100%);
+// 8: color: #91085E;
+
+
+
 .Anmeldelser {
-    color: black;
+    color: #F5D64A;
     font-family: '"Archer SSm A",';
     cursor: pointer;
     float: right;
@@ -27,16 +53,21 @@
 }
 
 .MenuItemContainer {
-    color: black;
+    color: #F5D64A;
     font-family: '"Archer SSm A",';
     cursor: pointer;
     float: right;
 }
 .MenuItemContainer:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #D4B66A;
 }
-.ReiseContainer:hover {
-    
+.ReiseContainer {
+    color: #F5D64A;
+    cursor: pointer;
+}
+.SignaturRetter {
+    color: #F5D64A;
+    cursor: pointer;
 }
 
 // // Dropdown

@@ -3,11 +3,17 @@ import groq from 'groq'
 import client from '../client'
 import BlockContent from '@sanity/block-content-to-react'
 
+// Default Layout
 import DefaultLayout from '../layouts';
 import imageUrlBuilder from '@sanity/image-url'
-import dessert from '../public/dessert.jpeg';
 
+// Images
+import orange from '../assets/orange.png';
+import nightOut from '../assets/nightOut.png'
+
+// Components
 import Card from '../components/card/card.component'
+
 
 
 function urlFor (source) {
@@ -34,6 +40,7 @@ const Index = (props) => {
            
         }}>
           <div style={{
+            marginTop: '45px',
             display: 'grid',
             gridTemplateColumns: '1fr 1.5fr 1.5fr 1.5fr',
             gridTemplateRows: '100px 500px',
@@ -42,8 +49,22 @@ const Index = (props) => {
             // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
             color: '#444'
           }}>
-            <div></div>
-            <div style={{borderBottom: '0.8px solid #808080',borderRight: '0.8px solid #808080'}}></div>
+            <div>
+              
+            </div>
+            <div style={{
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center', 
+                borderBottom: '0.8px solid #808080',
+                borderRight: '0.8px solid #808080'
+            }}>
+            {/* <img
+                style={{ width: '200px'}}
+                src={nightOut}
+                alt="tasty food illustration"
+              /> */}
+            </div>
             <div style={{borderBottom: '0.8px solid #808080'}}>
             <h3
                   style={{
@@ -60,6 +81,7 @@ const Index = (props) => {
                 >
                 En matblogg med fokus på miljø & gode opplevelser.
               </h3>
+              
             </div>
             <div></div>
             <div></div>
@@ -67,7 +89,14 @@ const Index = (props) => {
               {/* CARD */}
               <Card {...props} />
             </div>
-            <div></div>
+            <div>
+              <img 
+                style={{height: '250px', marginTop: '75px', marginLeft: '35px'}}
+                src={orange} 
+                alt="orange" 
+              />
+              
+            </div>
             <div></div>
           </div>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import styles from './menu.module.scss'
+import nightOut from '../../assets/nightOut.png'
 
 const Header = () => (
      <header className={styles.HeaderContainer}>
@@ -13,7 +14,13 @@ const Header = () => (
          <div></div>
          <div></div>
          <div></div>
-         <div></div>
+         <div>
+            {/* <img
+                style={{ width: '200px', opacity: '0.7', borderRadius: '25px'}}
+                src={nightOut}
+                alt="tasty food illustration"
+              /> */}
+         </div>
          <div className={styles.logo}>
              {/* LOGO */}
              <Link href="/" as={`/`}>

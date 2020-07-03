@@ -46,17 +46,17 @@ const Post = (props) => {
   } = props
   return (
     <div>
-      <div style={{
+      {/* <div style={{
             width: '100%',
             height: '25px',
             backgroundImage: 'url(https://i.imgur.com/fF3cAue.png)',
             backgroundSize: '30px 15px',
             backgroundRepeat: 'repeat-x',
             backgroundPositionY: '0px'
-        }}></div>
+        }}></div> */}
       <Header />
       <article className={styles.body}>
-        <div>1</div>
+        <div></div>
         <div style={{borderRight:'0.8px solid #808080', borderBottom: '0.8px solid #808080'}}>
           <h3 className={styles.title}>{title}</h3>
         </div>
