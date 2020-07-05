@@ -40,10 +40,10 @@ const Index = (props) => {
            
         }}>
           <div style={{
-            marginTop: '45px',
+            // marginTop: '45px',
             display: 'grid',
             gridTemplateColumns: '1fr 1.5fr 1.5fr 1.5fr',
-            gridTemplateRows: '100px 500px',
+            gridTemplateRows: '170px 80vw',
             height: '40vw',
             // backgroundColor: '#E0ECF7',
             // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
@@ -62,7 +62,7 @@ const Index = (props) => {
               <h3
                   style={{
                     fontFamily: "Archer SSm A",
-                    fontSize: '24px',
+                    fontSize: '20.8px',
                     textAlign: 'center',
                     paddingLeft: '15%',
                     paddingRight: '15%',
@@ -81,7 +81,7 @@ const Index = (props) => {
                 alt="tasty food illustration"
               /> */}
             </div>
-            <div style={{borderBottom: '0.8px solid #808080', display: 'flex', alignItems: 'center'}}>
+            <div style={{borderBottom: '0.8px solid #808080', display: 'flex', alignItems: 'center' }}>
             <h3
                   style={{
                     fontFamily: "Archer SSm A",
@@ -92,7 +92,7 @@ const Index = (props) => {
                     letterSpacing: '0.19em',
                     fontWeight: '900',
                     lineHeight: '1.6em',
-                    paddinBottom: '2vw'
+                    paddinBottom: '2vw',
                   }}
                 >
                 En matblogg med fokus på miljø & gode opplevelser.
@@ -107,7 +107,7 @@ const Index = (props) => {
             </div>
             <div>
               <img 
-                style={{height: '250px', marginTop: '75px', marginLeft: '35px'}}
+                style={{height: '250px', marginTop: '75px', marginLeft: '25px'}}
                 src={orange} 
                 alt="orange" 
               />

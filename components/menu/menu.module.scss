@@ -11,7 +11,7 @@
 }
 .H1Container {
     text-transform: uppercase;
-	background: linear-gradient(to right, #fd1d1d 0%, #C5D068 28%, #a3eaf2 100%);
+	background: linear-gradient(to right, #fd1d1d 0%, #C5D068 24%, #a3eaf2 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	
@@ -44,7 +44,7 @@
     float: right;
 }
 .Anmeldelser:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #F5D64A;
 }
 .logo {
     display: flex;

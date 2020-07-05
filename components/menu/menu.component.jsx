@@ -30,7 +30,7 @@ const Header = () => (
               />
              {/* LOGO */}
              <Link href="/" as={`/`}>
-                 <h1 className={styles.H1Container}>Yum Tash</h1>
+                 <h1 className={styles.H1Container}>YumTash</h1>
             </Link>
         </div>
          <div></div>
@@ -83,15 +83,16 @@ const Header = () => (
          <div></div>
          <div>
             <Link href="/reise" as={`/reise`}>
-                <h3 className={styles.ReiseContainer}>
-                    Reise
+                
+                <h3 className={styles.SignaturRetter}>
+                    Drinker
                 </h3>
             </Link>
          </div>
          <div>
             <Link href="/signatur" as="{`/signatur`}">
-                <h3 className={styles.SignaturRetter}>
-                    Signatur Retter
+                <h3 className={styles.ReiseContainer}>
+                    Reise
                 </h3>
             </Link>
          </div>

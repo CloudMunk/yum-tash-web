@@ -80,7 +80,7 @@ const Card = (props) => {
                     </div>
                     <Link href={`/post/${posts[1].slug.current}`}>
                         <div className={styles.blog_slider__button}>
-                            <span>LES MER</span>
+                            <span className={styles.buttonText}>LES MER</span>
                         </div>
                     </Link>
                 </div>
