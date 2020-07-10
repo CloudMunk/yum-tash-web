@@ -73,8 +73,9 @@ const Index = (props) => {
                     marginBottom: '2vw'
                   }}
                 >
-                Unike smaker, unike opplevelser. <br/> Velkommen til Yum Tash.
+                Unike smaker, unike opplevelser.  Velkommen til Yum Tash.
               </h3>
+              
             {/* <img
                 style={{ width: '200px'}}
                 src={nightOut}
