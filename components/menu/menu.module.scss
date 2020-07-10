@@ -1,3 +1,6 @@
+$font: #f85597;
+$logoFont: #f85597;
+
 .HeaderContainer {
     display: grid;
     grid-template-columns: 1.2fr repeat(2, 1fr) 2fr repeat(2, 1fr) 1.2fr;
@@ -8,12 +11,14 @@
     z-index: 3;
     background-color: #121212;
     color: whitesmoke;
+    border-bottom: 2px solid #BF3E77;
 }
 .H1Container {
     text-transform: uppercase;
-	background: linear-gradient(to right, #fd1d1d 0%, #C5D068 24%, #a3eaf2 100%);
+	background: linear-gradient(to right, #fd1d1d 0%, #a3eaf2 24%, #BF3E77 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    // color: $logoFont;
 	
     cursor: pointer;
     font-size: 42px;
@@ -38,13 +43,13 @@
 
 
 .Anmeldelser {
-    color: #F5D64A;
+    color: $font;
     font-family: '"Archer SSm A",';
     cursor: pointer;
     float: right;
 }
 .Anmeldelser:hover {
-    border-bottom: 1px solid #F5D64A;
+    border-bottom: 1px solid $font;
 }
 .logo {
     display: flex;
@@ -53,20 +58,20 @@
 }
 
 .MenuItemContainer {
-    color: #F5D64A;
+    color: $font;
     font-family: '"Archer SSm A",';
     cursor: pointer;
     float: right;
 }
 .MenuItemContainer:hover {
-    border-bottom: 1px solid #D4B66A;
+    border-bottom: 1px solid $font;
 }
 .ReiseContainer {
-    color: #F5D64A;
+    color: $font;
     cursor: pointer;
 }
 .SignaturRetter {
-    color: #F5D64A;
+    color: $font;
     cursor: pointer;
 }
 

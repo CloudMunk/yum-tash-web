@@ -9,7 +9,7 @@ import imageUrlBuilder from '@sanity/image-url'
 
 // Images
 import orange from '../assets/orange.png';
-import nightOut from '../assets/nightOut.png'
+import sideBar from '../assets/sidebar.png'
 
 // Components
 import Card from '../components/card/card.component'
@@ -111,9 +111,14 @@ const Index = (props) => {
                 src={orange} 
                 alt="orange" 
               />
-              <h2
-                style={{marginLeft: '6vw'}}
-              >Populære Retter</h2>
+              <h2 style={{marginLeft: '6vw'}}>
+                Populære Retter
+              </h2>
+              {/* <img 
+                style={{width:'335px' , marginTop: '75px', marginLeft: '25px'}}
+                src={sideBar} 
+                alt="orange" 
+              /> */}
             </div>
             <div></div>
           </div>
