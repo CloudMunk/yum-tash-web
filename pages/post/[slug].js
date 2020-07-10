@@ -22,7 +22,7 @@ const Post = (props) => {
   const {
     title = 'Missing title',
     name = 'Missing name',
-    categories,
+    categories = [],
     authorImage,
     mainImage,
     secondBody,
