@@ -56,7 +56,7 @@ const HomePage = (props) => {
                 <div></div>
                 <div style={{borderRight:'0.8px solid #808080'}}>
                 {/* CARD */}
-                <Card {...props} />
+                {/* <Card {...props} /> */}
                 </div>
                 <div>
                 <img 
