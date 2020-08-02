@@ -2,6 +2,7 @@ import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
 import BlockContent from '@sanity/block-content-to-react'
+import dynamic from 'next/dynamic'
 
 // Default Layout
 import DefaultLayout from '../layouts';
@@ -9,7 +10,9 @@ import imageUrlBuilder from '@sanity/image-url'
 
 
 // Components
-import HomePage from '../components/homepage/homepage.component'
+
+const HomePage = dynamic(() => import('../components/homepage/homepage.component'))
+// import HomePage from '../components/homepage/homepage.component'
 import Footer from '../components/footer/footer.component'
 
 
