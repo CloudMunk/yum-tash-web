@@ -11,8 +11,6 @@ import imageUrlBuilder from '@sanity/image-url'
 import styles from './index.module.scss'
 // Components
 
-// const HomePage = dynamic(() => import('../components/homepage/homepage.component'))
-// import HomePage from '../components/homepage/homepage.component'
 import Footer from '../components/footer/footer.component'
 
 // Images

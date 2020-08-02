@@ -27,6 +27,8 @@ export default class CustomDocument extends Document {
     return (
       <html lang="en">
         <Head>
+          {/* FAVICON */}
+          <link rel="shortcut icon" href="/static/favicon.ico" />
           {/* <link rel="shortcut icon" type="image/x-icon" href={FavIcon} /> */}
           <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
           {/* We only want to add the scripts if in production */}
