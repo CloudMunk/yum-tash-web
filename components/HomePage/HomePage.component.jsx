@@ -19,6 +19,7 @@ function urlFor (source) {
     return imageUrlBuilder(client).image(source)
 }
 
+
 const HomePage = (props) => {
     const { 
         introduction = [],
