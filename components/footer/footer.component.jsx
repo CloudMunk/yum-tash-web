@@ -37,7 +37,7 @@ const Footer = () => (
                 </div>
             </div>
             <div>
-            <p>Copyright</p>
+            <p> YumTash &copy; 2020</p>
             </div>
         </div>
         
