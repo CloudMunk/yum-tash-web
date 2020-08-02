@@ -1,0 +1,80 @@
+$breakpoint-tablet: 1199px;
+$breakpoint-bigscreen: 4000px;
+// $breakpoint-mobile: 400px;
+
+// Big screens
+@media (min-width: 1200px) and (max-width: $breakpoint-bigscreen) {
+    .homeContainer { 
+        // backgroundImage: 'linear-gradient(to right, rgb(0, 154, 164), rgb(21, 32, 33))',
+        // background-color: #6adb90; 
+        margin: 0 auto;
+        width: 100vw; 
+        height: 100%;        
+    }
+    .leftDiv {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 0.8px solid #808080;
+        border-right: 0.8px solid #808080; 
+    }
+    .leftHeader {
+       font-size: 1.2em !important;
+    }
+    .rightDiv {
+        border-bottom: 0.8px solid #808080; 
+        display: flex; 
+        align-items: center;
+    }
+  .gridContainer {
+    // marginTop: '45px',
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 170px 80vw;
+    height: 100%;
+    // background-color: #9e8d2a;
+    // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
+    color: #444;
+  }
+}
+
+// Tablets
+@media (min-width: 800px) and (max-width: $breakpoint-tablet) {
+    .gridContainer {
+        // marginTop: '45px',
+        display: grid;
+        grid-template-columns: 0.2fr 2fr 0.5fr 0.2fr;
+        grid-template-rows: 170px 80vw;
+        height: 40vw;
+        // background-color: #2a669e;
+        // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
+        color: #444;
+      }
+      .leftDiv {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        
+        border-bottom: 0.8px solid #808080;
+        border-right: 0.8px solid #808080; 
+      }
+      .leftHeader {
+          font-size: 0.75em !important;
+      }
+      
+}
+
+// Mobile
+// @media (min-width: 600px) and (max-width: $breakpoint-mobile) {
+    // .gridContainer {
+    //     // marginTop: '45px',
+    //     display: grid;
+    //     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+    //     grid-template-rows: 170px 80vw;
+    //     height: 40vw;
+    //     // backgroundColor: '#E0ECF7',
+    //     // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
+    //     color: #444;
+    //   }
+// }

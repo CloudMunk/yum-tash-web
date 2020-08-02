@@ -1,0 +1,33 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #b9d1fd;
+    margin-bottom: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.icons {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.twitter:hover {
+    fill: #1da1f2;
+    // box-shadow: 0px 0px 60px 20px #FFF;
+    background-color:#b9d1fd;
+    
+}
+
+.instagram:hover {
+    box-shadow: 0px 0px 60px 1px #eb51ff;
+}

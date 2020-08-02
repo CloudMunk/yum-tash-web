@@ -7,13 +7,10 @@ import BlockContent from '@sanity/block-content-to-react'
 import DefaultLayout from '../layouts';
 import imageUrlBuilder from '@sanity/image-url'
 
-// Images
-import orange from '../assets/orange.png';
-import sideBar from '../assets/sidebar.png'
 
 // Components
-import Card from '../components/card/card.component'
-
+import HomePage from '../components/homepage/homepage.component'
+import Footer from '../components/footer/footer.component'
 
 
 function urlFor (source) {
@@ -31,103 +28,9 @@ const Index = (props) => {
     <div>
         <DefaultLayout />
         {/* FOLD */}
-        <div style={{
-            // backgroundImage: 'linear-gradient(to right, rgb(0, 154, 164), rgb(21, 32, 33))',
-            // backgroundColor: '#E0ECF7', 
-            margin: '0 auto', 
-            width: '100vw', 
-            height: '40vw', 
-           
-        }}>
-          <div style={{
-            // marginTop: '45px',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1.5fr 1.5fr 1.5fr',
-            gridTemplateRows: '170px 80vw',
-            height: '40vw',
-            // backgroundColor: '#E0ECF7',
-            // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
-            color: '#444'
-          }}>
-            <div>
-              
-            </div>
-            <div style={{
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center', 
-                borderBottom: '0.8px solid #808080',
-                borderRight: '0.8px solid #808080'
-            }}>
-              <h3
-                  style={{
-                    fontFamily: "Archer SSm A",
-                    fontSize: '20.8px',
-                    textAlign: 'center',
-                    paddingLeft: '15%',
-                    paddingRight: '15%',
-                    letterSpacing: '0.19em',
-                    fontWeight: '900',
-                    lineHeight: '2em',
-                    paddinBottom: '2vw',
-                    marginBottom: '2vw'
-                  }}
-                >
-                Unike smaker, unike opplevelser.  Velkommen til Yum Tash.
-              </h3>
-              
-            {/* <img
-                style={{ width: '200px'}}
-                src={nightOut}
-                alt="tasty food illustration"
-              /> */}
-            </div>
-            <div style={{borderBottom: '0.8px solid #808080', display: 'flex', alignItems: 'center' }}>
-            <h3
-                  style={{
-                    fontFamily: "Archer SSm A",
-                    fontSize: '17px',
-                    textAlign: 'center',
-                    paddingLeft: '15%',
-                    paddingRight: '15%',
-                    letterSpacing: '0.19em',
-                    fontWeight: '900',
-                    lineHeight: '1.6em',
-                    paddinBottom: '2vw',
-                  }}
-                >
-                En matblogg med fokus på miljø & gode opplevelser.
-              </h3>
-              
-            </div>
-            <div></div>
-            <div></div>
-            <div style={{borderRight:'0.8px solid #808080', height: '80vw'}}>
-              {/* CARD */}
-              <Card {...props} />
-            </div>
-            <div>
-              <img 
-                style={{height: '250px', marginTop: '75px', marginLeft: '25px'}}
-                src={orange} 
-                alt="orange" 
-              />
-              <h2 style={{marginLeft: '6vw'}}>
-                Populære Retter
-              </h2>
-              {/* <img 
-                style={{width:'335px' , marginTop: '75px', marginLeft: '25px'}}
-                src={sideBar} 
-                alt="orange" 
-              /> */}
-            </div>
-            <div></div>
-          </div>
-
-
-
-
-        </div>  
+        <HomePage {...props} />
+        {/* <Footer /> */}
+        <Footer />
     </div>
       
     )

@@ -28,8 +28,9 @@ export default class CustomDocument extends Document {
       <html lang="en">
         <Head>
           {/* <link rel="shortcut icon" type="image/x-icon" href={FavIcon} /> */}
-
+          <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
           {/* We only want to add the scripts if in production */}
+          <link rel="stylesheet" href="https://use.typekit.net/mfo7xer.css" />
           <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"/>
         </Head>

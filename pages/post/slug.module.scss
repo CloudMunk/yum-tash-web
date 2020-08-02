@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     max-width: 350px;
     margin-top: 35px;
+    margin-left: 1.1vw;
 }
 .tags {
     margin-left: 5px;
@@ -37,11 +38,12 @@
     padding-top: 20px;
 }
 .paragraph {
-    max-width: 580px;
+    max-width: 520px;
 }
 
 .introduction {
-    max-width: 580px;
+    max-width: 510px;
+    text-align: center;
 }
 .profilePic {
     border-radius: 55%;

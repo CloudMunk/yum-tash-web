@@ -11,6 +11,9 @@ import styles from './slug.module.scss'
 // Components
 import Header from '../../components/menu/menu.component';
 
+// Static Images
+import sideBar from '../../assets/sidebar.png'
+
 
 
 function urlFor (source) {
@@ -206,6 +209,11 @@ const Post = (props) => {
             <ul className={styles.hashtags}>
               {categories.map(category => <p className={styles.tags} key={category}>{category}</p>)}
             </ul>
+            <img 
+              style={{ width: '17vw', marginLeft: '3vw'}}
+              src={sideBar} 
+              alt="sidebar icon" 
+            />
         </div>
         <div></div>
       </article>

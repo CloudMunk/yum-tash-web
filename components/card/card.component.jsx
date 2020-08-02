@@ -15,6 +15,7 @@ const Card = (props) => {
     console.log(posts[0].slug)
       return (
             <div className={styles.bodyCard}>
+                {/* CARD 1 */}
                 <div className={styles.blog_slider}>
                     <div className={styles.blog_slider__wrp, styles.swiper_wrapper}>
                         <div className={styles.blog_slider__item}>
@@ -71,10 +72,8 @@ const Card = (props) => {
                                             blocks={posts[1].introduction}
                                             // imageOptions={{ w: 300, h: 100, fit: 'max' }}
                                             {...client.config()}
-                                        />
-                                        
-                                    </div>
-                                    
+                                        /> 
+                                    </div>   
                             </div>
                         </div>  
                     </div>
