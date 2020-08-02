@@ -1,6 +1,6 @@
 $breakpoint-tablet: 1199px;
 $breakpoint-bigscreen: 4000px;
-// $breakpoint-mobile: 400px;
+$breakpoint-mobile: 799px;
 
 // Big screens
 @media (min-width: 1200px) and (max-width: $breakpoint-bigscreen) {
@@ -66,18 +66,14 @@ $breakpoint-bigscreen: 4000px;
 }
 
 // Mobile
-// @media (min-width: 600px) and (max-width: $breakpoint-mobile) {
-    // .gridContainer {
-    //     // marginTop: '45px',
-    //     display: grid;
-    //     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
-    //     grid-template-rows: 170px 80vw;
-    //     height: 40vw;
-    //     // backgroundColor: '#E0ECF7',
-    //     // backgroundImage: 'linear-gradient(to right, rgb(198, 253, 234), rgb(242, 194, 188))',
-    //     color: #444;
-    //   }
-// }
+@media (min-width: 400px) and (max-width: $breakpoint-mobile) {
+    .homeContainer {
+        display: none;
+    }
+    .gridContainer {
+        display: none;
+    }
+}
 
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');

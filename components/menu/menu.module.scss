@@ -8,7 +8,7 @@ $backgroundMenu: #BED3FA;
 
 $breakpoint-tablet: 1199px;
 $breakpoint-bigscreen: 4000px;
-// $breakpoint-mobile: 400px;
+$breakpoint-mobile: 799px;
 
 // Big screens
 @media (min-width: 1200px) and (max-width: $breakpoint-bigscreen) {
@@ -224,4 +224,114 @@ $breakpoint-bigscreen: 4000px;
         margin-left: 2vw;
       }
     // ----------------------------------
+}
+
+
+// Mobile
+@media (min-width: 400px) and (max-width: $breakpoint-mobile) {
+    .HeaderContainer {
+        display: grid;
+        grid-template-columns: 0.2fr repeat(2, 1.4fr) 2fr repeat(2, 1.4fr) 0.2fr;
+        grid-template-rows: 1fr 2fr 0.3fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        max-height: 100px !important;
+        z-index: 3;
+        // background: linear-gradient(40deg, rgba(18,18,18,1) 33%, #280773 75%, rgba(255,255,255,1) 100%);
+        background-color: $backgroundMenu;
+        color: whitesmoke;
+        border-bottom: 5px solid #0A0C66;
+    }
+    .H1Container {
+        text-transform: uppercase;
+        // background: linear-gradient(to right, #fd1d1d 0%, #FFE873 24%, #FFE873 74%, #BF3E77 100%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        color: $logoFont;
+        
+        cursor: pointer;
+        font-size: 52px;
+    }
+    
+    .Anmeldelser {
+        color: $font;
+        font-family: 'hobo-std, sans-serif, Archer SSm A';
+        font-size: 18px !important;
+        font-weight: bolder;
+        cursor: pointer;
+        // float: right;
+    }
+    .Anmeldelser:hover {
+        border-bottom: 1px solid $font;
+        width: 55%;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Major Mono Display';
+        margin-left: -2vw;
+    }
+    
+    .MenuItemContainer {
+        display: flex;
+        color: $font;
+        font-family: '"Archer SSm A",';
+        font-size: 18px !important;
+        cursor: pointer;
+        float: right;
+        margin-top: 0.1vw;
+    }
+    .MenuItemContainer:hover {
+        border-bottom: 1px solid $font;
+    }
+    .ReiseContainer {
+        color: $font;
+        cursor: pointer;
+        font-family: '"Archer SSm A",';
+        font-size: 18px !important;
+        margin-top: 0.1vw;
+    }
+    .ReiseContainer:hover {
+        border-bottom: 1px solid $font;
+        width: 22%;
+    }
+    .drinker {
+        color: $font;
+        cursor: pointer;
+        font-family: '"Archer SSm A",';
+        font-size: 18px !important;
+        margin-top: 8vw;
+    }
+    // .drinker:hover {
+    //     border-bottom: 1px solid $font;
+    //     width: 80%;
+    // }
+    // // Dropdown
+    
+    .dropdown {
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+    }
+    .dropdownContent {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        font-family: 'Roboto Slab';
+      }
+      .dropDownItems {
+        cursor: pointer;
+      }
+      .dropdown:hover .dropdownContent {
+        display: block;
+        margin-top: 7vw;
+        margin-left: 2vw;
+      }
+   
 }
