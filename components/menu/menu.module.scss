@@ -12,6 +12,9 @@ $breakpoint-mobile: 799px;
 
 // Big screens
 @media (min-width: 1200px) and (max-width: $breakpoint-bigscreen) {
+    .MobileContainer {
+        display: none; 
+    }
 .HeaderContainer {
     display: grid;
     grid-template-columns: 1.2fr repeat(2, 1fr) 2fr repeat(2, 1fr) 1.2fr;

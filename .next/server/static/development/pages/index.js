@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -202,7 +202,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"HeaderContainer\": \"menu_HeaderContainer__3Pznh\",\n\t\"H1Container\": \"menu_H1Container__mBULu\",\n\t\"Anmeldelser\": \"menu_Anmeldelser__2UXwf\",\n\t\"logo\": \"menu_logo__cfVu5\",\n\t\"MenuItemContainer\": \"menu_MenuItemContainer__3INec\",\n\t\"ReiseContainer\": \"menu_ReiseContainer__1w2a4\",\n\t\"drinker\": \"menu_drinker__2ay6t\",\n\t\"dropdown\": \"menu_dropdown__htHC9\",\n\t\"dropdownContent\": \"menu_dropdownContent__1PmWO\",\n\t\"dropDownItems\": \"menu_dropDownItems__2b-yb\",\n\t\"MobileContainer\": \"menu_MobileContainer__3GdL6\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnRzL21lbnUvbWVudS5tb2R1bGUuc2Nzcz84ZWNiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoiLi9jb21wb25lbnRzL21lbnUvbWVudS5tb2R1bGUuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcIkhlYWRlckNvbnRhaW5lclwiOiBcIm1lbnVfSGVhZGVyQ29udGFpbmVyX18zUHpuaFwiLFxuXHRcIkgxQ29udGFpbmVyXCI6IFwibWVudV9IMUNvbnRhaW5lcl9fbUJVTHVcIixcblx0XCJBbm1lbGRlbHNlclwiOiBcIm1lbnVfQW5tZWxkZWxzZXJfXzJVWHdmXCIsXG5cdFwibG9nb1wiOiBcIm1lbnVfbG9nb19fY2ZWdTVcIixcblx0XCJNZW51SXRlbUNvbnRhaW5lclwiOiBcIm1lbnVfTWVudUl0ZW1Db250YWluZXJfXzNJTmVjXCIsXG5cdFwiUmVpc2VDb250YWluZXJcIjogXCJtZW51X1JlaXNlQ29udGFpbmVyX18xdzJhNFwiLFxuXHRcImRyaW5rZXJcIjogXCJtZW51X2RyaW5rZXJfXzJheTZ0XCIsXG5cdFwiZHJvcGRvd25cIjogXCJtZW51X2Ryb3Bkb3duX19odEhDOVwiLFxuXHRcImRyb3Bkb3duQ29udGVudFwiOiBcIm1lbnVfZHJvcGRvd25Db250ZW50X18xUG1XT1wiLFxuXHRcImRyb3BEb3duSXRlbXNcIjogXCJtZW51X2Ryb3BEb3duSXRlbXNfXzJiLXliXCIsXG5cdFwiTW9iaWxlQ29udGFpbmVyXCI6IFwibWVudV9Nb2JpbGVDb250YWluZXJfXzNHZEw2XCJcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/menu/menu.module.scss\n");
+eval("// Exports\nmodule.exports = {\n\t\"MobileContainer\": \"menu_MobileContainer__3GdL6\",\n\t\"HeaderContainer\": \"menu_HeaderContainer__3Pznh\",\n\t\"H1Container\": \"menu_H1Container__mBULu\",\n\t\"Anmeldelser\": \"menu_Anmeldelser__2UXwf\",\n\t\"logo\": \"menu_logo__cfVu5\",\n\t\"MenuItemContainer\": \"menu_MenuItemContainer__3INec\",\n\t\"ReiseContainer\": \"menu_ReiseContainer__1w2a4\",\n\t\"drinker\": \"menu_drinker__2ay6t\",\n\t\"dropdown\": \"menu_dropdown__htHC9\",\n\t\"dropdownContent\": \"menu_dropdownContent__1PmWO\",\n\t\"dropDownItems\": \"menu_dropDownItems__2b-yb\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnRzL21lbnUvbWVudS5tb2R1bGUuc2Nzcz84ZWNiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoiLi9jb21wb25lbnRzL21lbnUvbWVudS5tb2R1bGUuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcIk1vYmlsZUNvbnRhaW5lclwiOiBcIm1lbnVfTW9iaWxlQ29udGFpbmVyX18zR2RMNlwiLFxuXHRcIkhlYWRlckNvbnRhaW5lclwiOiBcIm1lbnVfSGVhZGVyQ29udGFpbmVyX18zUHpuaFwiLFxuXHRcIkgxQ29udGFpbmVyXCI6IFwibWVudV9IMUNvbnRhaW5lcl9fbUJVTHVcIixcblx0XCJBbm1lbGRlbHNlclwiOiBcIm1lbnVfQW5tZWxkZWxzZXJfXzJVWHdmXCIsXG5cdFwibG9nb1wiOiBcIm1lbnVfbG9nb19fY2ZWdTVcIixcblx0XCJNZW51SXRlbUNvbnRhaW5lclwiOiBcIm1lbnVfTWVudUl0ZW1Db250YWluZXJfXzNJTmVjXCIsXG5cdFwiUmVpc2VDb250YWluZXJcIjogXCJtZW51X1JlaXNlQ29udGFpbmVyX18xdzJhNFwiLFxuXHRcImRyaW5rZXJcIjogXCJtZW51X2RyaW5rZXJfXzJheTZ0XCIsXG5cdFwiZHJvcGRvd25cIjogXCJtZW51X2Ryb3Bkb3duX19odEhDOVwiLFxuXHRcImRyb3Bkb3duQ29udGVudFwiOiBcIm1lbnVfZHJvcGRvd25Db250ZW50X18xUG1XT1wiLFxuXHRcImRyb3BEb3duSXRlbXNcIjogXCJtZW51X2Ryb3BEb3duSXRlbXNfXzJiLXliXCJcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/menu/menu.module.scss\n");
 
 /***/ }),
 
@@ -404,7 +404,7 @@ eval("// Exports\nmodule.exports = {\n\t\"homeContainer\": \"index_homeContainer
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
