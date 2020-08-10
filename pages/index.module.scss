@@ -21,6 +21,8 @@ $breakpoint-mobile: 799px;
     }
     .leftHeader {
        font-size: 1.2em !important;
+       margin: 0 auto;
+       text-align: center;
     }
     .rightDiv {
         border-bottom: 0.8px solid #808080; 
@@ -66,9 +68,12 @@ $breakpoint-mobile: 799px;
 }
 
 // Mobile
-@media (min-width: 400px) and (max-width: $breakpoint-mobile) {
-    .homeContainer {
-        display: none !important;
+@media (min-width: 200px) and (max-width: $breakpoint-mobile) {
+    // .homeContainer {
+    //     display: none !important;
+    // }
+    .leftDiv {
+        display: none;
     }
 }
 // ------------ CARDS ------------------------------
@@ -612,10 +617,10 @@ $breakpoint-bigscreen: 4000px;
   } 
     }
   }
-  }
+}
 
 // Mobile
-@media (min-width: 400px) and (max-width: $breakpoint-mobile) { 
+@media (min-width: 200px) and (max-width: $breakpoint-mobile) { 
     .bodyCard {
       min-height: 20vw;
       font-family: 'Forum', cursive;
@@ -623,24 +628,25 @@ $breakpoint-bigscreen: 4000px;
       align-items: flex-start;
       flex-direction: column;
       border-radius: 25px;
-      width: 5vw;
-    //   margin-left: 5vw;
+      width: 15vw;
+      margin-left: 3.5vw;
     //   margin-top: 3vw;
   }
   
   .cardText {
       color: white;
-      margin-top: 5vw;
+    //   margin-top: 5vw;
       font-family: 'Forum', cursive;
+      font-size: 14px;
   }
   
   .blog_slider {
       position: relative;
-      width: 20vw;
+      width: 300px;
       max-width: 250px;
       min-height: 200px;
-      max-height: 280px;
-      margin-bottom: 45px;
+      max-height: 100px;
+    //   margin-bottom: 45px;
       background-color: $backgroundCard;
       // 17: 00746C
       // background-image: linear-gradient(293deg, #121212 0%, rgb(3, 3, 8) 56%, rgba(0,212,255,1) 100%);
@@ -648,7 +654,6 @@ $breakpoint-bigscreen: 4000px;
       padding: 25px;
       border-radius: 25px;
       height: 400px;
-    
      // Original linear-gradient(293deg, rgba(2,0,36,1) 0%, rgba(9,9,40,1) 47%, rgba(0,212,255,1) 100%);
     @media screen and (max-width: 992px) {
           max-width: 680px;
@@ -656,7 +661,7 @@ $breakpoint-bigscreen: 4000px;
     }
     
     @media screen and (max-width: 768px) {
-          min-height: 500px;
+          min-height: 300px;
           height: auto;
           margin: 180px auto;
     }
@@ -721,8 +726,8 @@ $breakpoint-bigscreen: 4000px;
       }
       
       img {
-          width: 18vw;
-          height: 18vw;
+          width: 30vw;
+          height: 30vw;
           object-fit: fill;
           display: block;
           border-radius: 20px;
@@ -738,10 +743,10 @@ $breakpoint-bigscreen: 4000px;
         width: 90%;
     }
       @media screen and (max-width: 576px) {
-        width: 95%;
+        width: 30vw;
       }
        @media screen and (max-height: 500px) and (min-width: 992px) {
-          height: 270px;
+          height: 30vw;
     }
     }
     
@@ -785,7 +790,7 @@ $breakpoint-bigscreen: 4000px;
       line-height: 1.2em;
       margin-top: 1vw;
       font-family: 'Archer SSm A';
-      font-size: 17px;
+      font-size: 9px;
       letter-spacing: 0.19em;
       font-weight: 900;
       line-height: 1.6em;
@@ -793,11 +798,11 @@ $breakpoint-bigscreen: 4000px;
     
     &__button {
       position: absolute; 
-      bottom: 0.8vw;
-      right: 0.8vw;
+      bottom: 2.5vw;
+      right: 3vw;
       background-color: #121212;
       // background-image: linear-gradient(292deg, #B90B0B 0%, #F89E00 50%, #00988D 100%);
-      padding: 15px 35px;
+      padding: 10px 20px;
       border-radius: 50px;
       color: #FFE873;
   //     background: rgb(63,94,251);
@@ -805,10 +810,10 @@ $breakpoint-bigscreen: 4000px;
   // background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
       // rgba(252, 56, 56, 0.4)
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 300;
       justify-content: center;
       text-align: center;
-      font-size: 0.65em;
+      font-size: 9px;
       letter-spacing: 1px;
       // box-shadow: 0px 0px 30px rgb(185, 84, 84);
       &:hover {
@@ -816,7 +821,7 @@ $breakpoint-bigscreen: 4000px;
         border: 0.5px solid black;
       }
       @media screen and (max-width: 576px) {
-        width: 100%;
+        width: 50px;
       }
       
     }
