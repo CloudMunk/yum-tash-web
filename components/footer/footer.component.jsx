@@ -1,4 +1,4 @@
-import Link from 'next/link'
+// import Link from 'next/link'
 
 import styles from './footer.module.scss'
 
@@ -39,9 +39,7 @@ const Footer = () => (
             <div>
             <p> YumTash &copy; 2020</p>
             </div>
-        </div>
-        
-        
+        </div>     
     </footer>
 )
 

@@ -28,7 +28,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/post/[slug]": [
+    "/om": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

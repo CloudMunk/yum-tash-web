@@ -70,10 +70,10 @@ const Header = () => (
          </div>
          <div></div>
          <div style={{display: 'flex', alignItems:'flex-end'}}>
-            <Link href="/drinks" as={`/drinks`}>
+            <Link href="/om" as={`/om`}>
                 
                 <h3 className={styles.drinker}>
-                    Drinker
+                    Om
                 </h3>
             </Link>
          </div>
@@ -108,9 +108,9 @@ const Header = () => (
                         Oppskrifter
                     </h3>
                 </Link>
-                <Link href="/drinks" as={`/drinks`}>
+                <Link href="/om" as={`/om`}>
                     <h3 className={styles.drinker}>
-                        Drinker
+                        Om
                     </h3>
                 </Link>
                 <Link href="/reise" as="{`/reise`}">
