@@ -1,3 +1,4 @@
+import ViewPort from '../components/ViewPort'
 import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
@@ -22,32 +23,32 @@ function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
 
-let windowWith = window.innerWidth
-
-// const imageSize = windowWith => {
-//   return windowWith
-// }
 
 const Index = (props) => {
     const { 
-      introduction = [],
-      posts = [], 
-      name,
-      slug
+      posts = []
     } = props
+   
+   let ImageWidth = 400
+    
+    const width = ViewPort()
+    if(width < 850) {
+      ImageWidth = 200
+    } else {
+      ImageWidth = 800
+    }
+    console.log(ImageWidth)
     return (
       
     <div>
       
-     {console.log('this is the viewport size', windowWith)}
+     {/* {console.log('this is the viewport size', windowWidth)} */}
         <DefaultLayout />
         {/* FOLD */}
         <div>
             <div className={styles.homeContainer}>
                 <div className={styles.gridContainer}>
-                <div>
-                
-                </div> 
+                <div></div> 
                 <div className={styles.leftDiv}>
                     <h3 className={styles.leftHeader}>
                         Unike smaker, unike opplevelser. Velkommen til Yum Tash.
@@ -87,7 +88,7 @@ const Index = (props) => {
                                 <img
                                     style={{ zIndex: '1000'}}
                                     src={urlFor(posts[0].mainImage)
-                                    .width(375)
+                                    .width(ImageWidth)
                                     .url()}
                                 />
                             </div>
@@ -120,7 +121,7 @@ const Index = (props) => {
                                 <img
                                     style={{ zIndex: '1000'}}
                                     src={urlFor(posts[1].mainImage)
-                                    .width(800)
+                                    .width(ImageWidth)
                                     .url()}
                                 />
                             </div>
@@ -147,7 +148,9 @@ const Index = (props) => {
                         </div>
                     </Link>
                 </div>
+                
             </div>
+            
                 </div>
                 <div>
                 <img 
@@ -176,6 +179,7 @@ const Index = (props) => {
             </div>
             </div>
         </div>
+        
         {/* <Footer /> */}
         <Footer />
     </div>
