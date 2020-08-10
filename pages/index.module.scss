@@ -4,6 +4,14 @@ $breakpoint-mobile: 799px;
 
 // Big screens
 @media (min-width: 1200px) and (max-width: $breakpoint-bigscreen) {
+    .mobileHide {
+        display: none;
+    }
+    .onMobileBar {
+        width: 285px;
+        margin-top: 5px; 
+        margin-left: 8vw;
+    }
     .homeContainer { 
         // backgroundImage: 'linear-gradient(to right, rgb(0, 154, 164), rgb(21, 32, 33))',
         // background-color: #6adb90; 
@@ -74,6 +82,10 @@ $breakpoint-mobile: 799px;
     // }
     .leftDiv {
         display: none;
+    }
+    .onMobileBar {
+        width: 65vw !important;
+        margin-left: 12vw;
     }
 }
 // ------------ CARDS ------------------------------
@@ -357,6 +369,9 @@ $breakpoint-bigscreen: 4000px;
 
 // Tablets
 @media (min-width: 800px) and (max-width: $breakpoint-tablet) {
+    .mobileHide {
+        display: none;
+    }
   .bodyCard {
       min-height: 20vw;
       font-family: 'Fira Sans', sans-serif;
@@ -372,7 +387,7 @@ $breakpoint-bigscreen: 4000px;
   .cardText {
       color: white;
       margin-top: 5vw;
-     font-size: 1em;
+     font-size: 16px;
   }
   
   .blog_slider {
@@ -531,7 +546,7 @@ $breakpoint-bigscreen: 4000px;
       font-size: 0.7em !important;
       letter-spacing: 0.19em;
       font-weight: 900;
-      line-height: 1.6em;
+      line-height: 9px;
     }
     
     &__button {
@@ -621,11 +636,18 @@ $breakpoint-bigscreen: 4000px;
 
 // Mobile
 @media (min-width: 200px) and (max-width: $breakpoint-mobile) { 
-    // .mobileHide {
-    //     visibility: hidden;
+    .hideOnMobile {
+        display: none;
+    }
+
+    // .bottomMobile {
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-direction: ;
     // }
+
     .bodyCard {
-      min-height: 20vw;
+    //   min-height: 200vw;
       font-family: 'Forum', cursive;
       display: flex;
     //   align-items: flex-start;
@@ -668,7 +690,8 @@ $breakpoint-bigscreen: 4000px;
     @media screen and (max-width: 768px) {
           min-height: 300px;
           height: auto;
-          margin: 180px auto;
+          margin-top: 185px;
+          margin-left: 8vw;
     }
     
     
@@ -809,9 +832,9 @@ $breakpoint-bigscreen: 4000px;
       padding: 10px 20px;
       border-radius: 50px;
       color: #FFE873;
-  //     background: rgb(63,94,251);
-  //     linear-gradient(292deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)
-  // background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+      //     background: rgb(63,94,251);
+      //     linear-gradient(292deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)
+      // background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
       // rgba(252, 56, 56, 0.4)
       text-decoration: none;
       font-weight: 300;
