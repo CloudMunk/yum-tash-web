@@ -621,15 +621,19 @@ $breakpoint-bigscreen: 4000px;
 
 // Mobile
 @media (min-width: 200px) and (max-width: $breakpoint-mobile) { 
+    // .mobileHide {
+    //     visibility: hidden;
+    // }
     .bodyCard {
       min-height: 20vw;
       font-family: 'Forum', cursive;
       display: flex;
-      align-items: flex-start;
+    //   align-items: flex-start;
       flex-direction: column;
       border-radius: 25px;
       width: 15vw;
       margin-left: 3.5vw;
+      margin-top: -100px;
     //   margin-top: 3vw;
   }
   
@@ -642,10 +646,11 @@ $breakpoint-bigscreen: 4000px;
   
   .blog_slider {
       position: relative;
-      width: 300px;
-      max-width: 250px;
+      min-width: 250px;
+      max-width: 300px;
       min-height: 200px;
-      max-height: 100px;
+      max-height: 200px;
+      margin-top: -150px;
     //   margin-bottom: 45px;
       background-color: $backgroundCard;
       // 17: 00746C
@@ -787,13 +792,12 @@ $breakpoint-bigscreen: 4000px;
     
     &__text {
       color: $font;
-      line-height: 1.2em;
       margin-top: 1vw;
       font-family: 'Archer SSm A';
       font-size: 9px;
       letter-spacing: 0.19em;
       font-weight: 900;
-      line-height: 1.6em;
+      line-height: 1px;
     }
     
     &__button {

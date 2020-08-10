@@ -34,7 +34,9 @@ const Index = (props) => {
     const windowSize = isWindowClient ? window.innerWidth : undefined
     
     console.log('this is the window size', windowSize)
+    // let thingToRemove = document.querySelectorAll(".mobileHide")[0];
 
+    // thingToRemove.parentNode.removeChild(thingToRemove);
   //  let ImageWidth = windowSize
     
     let ImageWidth = (windowSize) => { 
@@ -83,8 +85,8 @@ const Index = (props) => {
                 </h3>
                 
                 </div>
-                <div></div>
-                <div></div>
+                <div style={{marginLeft:'14vw'}}> <img width="250px" src={sideBar}/> </div>
+                <div className={styles.mobileHide}></div>
                 <div style={{borderRight:'0.8px solid #808080'}}>
                 {/* CARD */}
                 <div className={styles.bodyCard}>
