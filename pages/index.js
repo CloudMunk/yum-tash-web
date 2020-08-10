@@ -22,6 +22,12 @@ function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
 
+let windowWith = window.innerWidth
+
+// const imageSize = windowWith => {
+//   return windowWith
+// }
+
 const Index = (props) => {
     const { 
       introduction = [],
@@ -30,7 +36,10 @@ const Index = (props) => {
       slug
     } = props
     return (
+      
     <div>
+      
+     {console.log('this is the viewport size', windowWith)}
         <DefaultLayout />
         {/* FOLD */}
         <div>
@@ -78,7 +87,7 @@ const Index = (props) => {
                                 <img
                                     style={{ zIndex: '1000'}}
                                     src={urlFor(posts[0].mainImage)
-                                    .width(800)
+                                    .width(375)
                                     .url()}
                                 />
                             </div>

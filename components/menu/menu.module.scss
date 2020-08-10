@@ -12,12 +12,12 @@ $breakpoint-mobile: 799px;
 
 // Big screens
 @media (min-width: 1200px) and (max-width: $breakpoint-bigscreen) {
-    .MobileContainer {
-        display: none; 
-    }
+.MobileContainer {
+    display: none; 
+}
 .HeaderContainer {
     display: grid;
-    grid-template-columns: 1.2fr repeat(2, 1fr) 2fr repeat(2, 1fr) 1.2fr;
+    grid-template-columns: 0.8fr repeat(2, 1.2fr) 2fr repeat(2, 1fr) 0.8fr;
     grid-template-rows: 1fr 2fr 0.3fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -48,7 +48,7 @@ $breakpoint-mobile: 799px;
 }
 .Anmeldelser:hover {
     border-bottom: 1px solid $font;
-    width: 55%;
+    // width: 55%;
 }
 .logo {
     display: flex;
@@ -73,11 +73,11 @@ $breakpoint-mobile: 799px;
     cursor: pointer;
     font-family: '"Archer SSm A",';
     font-size: 21.5px !important;
-    margin-top: 4.2vw;
+    // margin-top: 4.2vw;
 }
 .ReiseContainer:hover {
     border-bottom: 1px solid $font;
-    width: 22%;
+    // width: 22%;
 }
 .drinker {
     color: $font;
@@ -88,7 +88,7 @@ $breakpoint-mobile: 799px;
 }
 .drinker:hover {
     border-bottom: 1px solid $font;
-    width: 80%;
+    // width: 40%;
 }
 // // Dropdown
 
@@ -122,6 +122,9 @@ $breakpoint-mobile: 799px;
 
 // Tablets
 @media (min-width: 800px) and (max-width: $breakpoint-tablet) {
+    .MobileContainer {
+        display: none; 
+    }
     .HeaderContainer {
         display: grid;
         grid-template-columns: 0.2fr repeat(2, 1.4fr) 2fr repeat(2, 1.4fr) 0.2fr;
@@ -140,8 +143,7 @@ $breakpoint-mobile: 799px;
         // background: linear-gradient(to right, #fd1d1d 0%, #FFE873 24%, #FFE873 74%, #BF3E77 100%);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
-        color: $logoFont;
-        
+        color: $logoFont; 
         cursor: pointer;
         font-size: 52px;
     }
@@ -231,7 +233,7 @@ $breakpoint-mobile: 799px;
 
 
 // Mobile
-@media (min-width: 300px) and (max-width: $breakpoint-mobile) {
+@media (min-width: 150px) and (max-width: $breakpoint-mobile) {
     .HeaderContainer {
         display: none; 
     }
@@ -244,5 +246,16 @@ $breakpoint-mobile: 799px;
         background-color: $backgroundMenu;
         width: auto;
     }
-    
+    .Anmeldelser {
+        font-size: 14px;
+    }
+    .Oppskrifter {
+        font-size: 14px;
+    }
+    .drinker {
+        font-size: 14px;
+    }
+    .ReiseContainer {
+        font-size: 14px;
+    }
 }
