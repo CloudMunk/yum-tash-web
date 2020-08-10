@@ -37,13 +37,15 @@ const Index = (props) => {
 
   //  let ImageWidth = windowSize
     
-    let ImageWidth = 0
-    if(windowSize < 850) {
-      ImageWidth = 200
-    } else {
-      ImageWidth = 800
+    let ImageWidth = (windowSize) => { 
+      if(windowSize < 850) {
+        return ImageWidth = 200
+      } else {
+        return ImageWidth = 800
+      }
     }
-    console.log('Image width', ImageWidth)
+    
+    console.log('Image width', ImageWidth(windowSize))
     return (
       
     <div>
@@ -94,7 +96,7 @@ const Index = (props) => {
                                 <img
                                     style={{ zIndex: '1000'}}
                                     src={urlFor(posts[0].mainImage)
-                                    .width(windowSize)
+                                    .width((windowSize < 850) ? 400 : 200)
                                     .url()}
                                 />
                             </div>
@@ -127,7 +129,7 @@ const Index = (props) => {
                                 <img
                                     style={{ zIndex: '1000'}}
                                     src={urlFor(posts[1].mainImage)
-                                    .width(windowSize)
+                                    .width((windowSize < 850) ? 400 : 200)
                                     .url()}
                                 />
                             </div>
