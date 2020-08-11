@@ -49,14 +49,6 @@ const Post = (props) => {
   } = props
   return (
     <div>
-      {/* <div style={{
-            width: '100%',
-            height: '25px',
-            backgroundImage: 'url(https://i.imgur.com/fF3cAue.png)',
-            backgroundSize: '30px 15px',
-            backgroundRepeat: 'repeat-x',
-            backgroundPositionY: '0px'
-        }}></div> */}
       <Header />
       <article className={styles.body}>
         <div></div>
