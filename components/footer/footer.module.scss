@@ -1,22 +1,16 @@
-.layout {
+.footer {
+    width: 100%;
+    background-color: #b9d1fd;
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.secondLayout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer {
-    width: 100%;
-    background-color: #b9d1fd;
-    margin-bottom: 0;
-    height: 200px;
+.layout {
     display: flex;
     justify-content: center;
     align-items: center;

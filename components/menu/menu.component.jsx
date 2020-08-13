@@ -46,26 +46,22 @@ const Header = () => (
                 </h3>
             </Link>
             <div className={styles.dropdownContent}>
+                <Link href="/forretter" as="{`/forretter`}">
                     <p className={styles.dropDownItems}>
-                        Middag
+                        Forretter
                     </p>
-                    <p className={styles.dropDownItems}>
-                        Klassikere
-                    </p>
-                    <p className={styles.dropDownItems}>
-                        Grillmat
-                    </p>
+                </Link>
                     <p className={styles.dropDownItems}>
                         Desserter
                     </p>
                     <p className={styles.dropDownItems}>
-                        Gjeste Middager
+                        Middager
                     </p>
-                    <Link href="/signatur" as="{`/signatur`}">
+                    {/* <Link href="/signatur" as="{`/signatur`}">
                         <p>
                             Signatur Retter
                         </p>
-                    </Link>
+                    </Link> */}
             </div>
          </div>
          <div></div>

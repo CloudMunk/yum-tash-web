@@ -1,0 +1,37 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.countries {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 45px;
+}
+.images {
+    max-width: 500px;
+    max-height: 335px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.images:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
