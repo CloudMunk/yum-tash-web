@@ -74,11 +74,11 @@ const Header = () => (
             </Link>
          </div>
          <div style={{display: 'flex', alignItems:'flex-end'}}>
-            <Link href="/reise" as="{`/reise`}">
+            <a href="/reise" as="{`/reise`}">
                 <h3 className={styles.ReiseContainer}>
                     Reise
                 </h3>
-            </Link>
+            </a>
          </div>
          <div></div>
      </header>

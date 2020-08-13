@@ -1,9 +1,14 @@
+.mainBody {
+    width: 100%;
+}
+
 .layout {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    // height: 100%;
 }
 .countries {
     display: flex;
@@ -25,9 +30,7 @@
 .images:hover {
     opacity: 0.8;
     cursor: pointer;
-    
 }
-
 
 .container {
     position: relative;
@@ -41,3 +44,4 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+

@@ -48,6 +48,7 @@ function urlFor (source) {
     "categories": categories[]->title,
     "authorImage": author->image,
     mainImage,
+    countryImage
     introduction
   }`
   
