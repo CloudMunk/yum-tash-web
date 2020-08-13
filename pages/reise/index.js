@@ -32,14 +32,16 @@ const Reise = (props) => {
                     {/* <Link href={`/countries/${posts[0].slug.current}`}>     */}
                     {countries.map(country =>
                         <div className={styles.container}>
-                        <h2 className={styles.centered}>{country.title}</h2>
-                        <img 
-                            className={styles.images}
-                            src={urlFor(country.image)
-                                .width(800)
-                                .url()}
-                        />
-                    </div>
+                            <h2 className={styles.centered}>
+                                {country.title}
+                            </h2>
+                            <img 
+                                className={styles.images}
+                                src={urlFor(country.image)
+                                    .width(800)
+                                    .url()}
+                            />
+                        </div>
                     )}
                         
                     {/* </Link> */}
@@ -55,7 +57,7 @@ const Reise = (props) => {
 
 Reise.getInitialProps = async () => ({
     countries: await client.fetch(groq`
-      *[_type == "country"]{
+      *[_type == "country"]| order(title desc){
             title,
             image
         }

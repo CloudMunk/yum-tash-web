@@ -33,18 +33,18 @@ const Header = () => (
          <div></div>
          <div></div>
          <div style={{display: 'flex', alignItems: 'flex-end'}}>
-            <Link href="/anmeldelser" as="{`/anmeldelser`}">
+            <a style={{textDecoration: 'none'}} href="/anmeldelser" as="{`/anmeldelser`}">
                 <h3 className={styles.Anmeldelser}>
                     Anmeldelser
                 </h3>
-            </Link>      
+            </a>      
          </div>
          <div className={styles.dropdown}>
-            <Link href="/oppskrifter" as="{`/oppskrifter`}">
+            <a style={{textDecoration: 'none'}} href="/oppskrifter" as="{`/oppskrifter`}">
                 <h3 className={styles.MenuItemContainer}>
                     Oppskrifter&#x21A1;
                 </h3>
-            </Link>
+            </a>
             <div className={styles.dropdownContent}>
                 <Link href="/forretter" as="{`/forretter`}">
                     <p className={styles.dropDownItems}>
@@ -67,14 +67,13 @@ const Header = () => (
          <div></div>
          <div style={{display: 'flex', alignItems:'flex-end'}}>
             <Link href="/om" as={`/om`}>
-                
                 <h3 className={styles.drinker}>
                     Om
                 </h3>
             </Link>
          </div>
          <div style={{display: 'flex', alignItems:'flex-end'}}>
-            <a href="/reise" as="{`/reise`}">
+            <a style={{textDecoration: 'none'}} href="/reise" as="{`/reise`}">
                 <h3 className={styles.ReiseContainer}>
                     Reise
                 </h3>
