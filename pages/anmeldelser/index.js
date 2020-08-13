@@ -6,7 +6,9 @@ const Anmeldelser = (props) => {
     return (
         <div>
             <Header />
-            <h1>Anmeldelser</h1>
+                <div>
+                    <h1>Anmeldelser</h1>
+                </div>
             <Footer />
         </div>
     )

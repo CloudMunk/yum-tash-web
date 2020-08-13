@@ -4,6 +4,7 @@ import Footer from '../../components/footer/footer.component'
 import MainGreece from '../../assets/headerGreece.jpg'
 import Barcode from '../../assets/osloBarcode.jpg'
 import Denmark from '../../assets/denmark.jpg'
+import Barcelona from '../../assets/barcelona2.jpg'
 
 import styles from './reise.module.scss'
 
@@ -38,6 +39,14 @@ const Reise = (props) => {
                         <img 
                             className={styles.images}
                             src={Denmark} 
+                        />
+                    </div>
+                    {/* Barcelona */}
+                    <div className={styles.container}>
+                        <h2 className={styles.centered}>Barcelona</h2>
+                        <img 
+                            className={styles.images}
+                            src={Barcelona} 
                         />
                     </div>
                 </div>

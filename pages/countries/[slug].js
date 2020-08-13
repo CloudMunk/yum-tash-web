@@ -13,7 +13,7 @@ function urlFor (source) {
   }
 
 
-  const Post = (props) => {
+  const Countries = (props) => {
     console.log(props)
     const {
       title = 'Missing title',
@@ -51,7 +51,7 @@ function urlFor (source) {
     introduction
   }`
   
-  Post.getInitialProps = async function (context) {
+  Countries.getInitialProps = async function (context) {
     // It's important to default the slug so that it doesn't return "undefined"
     const { slug = "" } = context.query
     return await client.fetch(query, { slug })

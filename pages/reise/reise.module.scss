@@ -13,14 +13,19 @@
     margin-top: 45px;
 }
 .images {
+    height: fit-content;
+    width: fit-content;
     max-width: 500px;
     max-height: 335px;
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 .images:hover {
     opacity: 0.8;
     cursor: pointer;
+    
 }
 
 
@@ -34,4 +39,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
