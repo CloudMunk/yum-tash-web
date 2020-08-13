@@ -10,6 +10,7 @@ const Om = (props) => {
     return (
         <div style={{height: '100%'}}>
             <Header />
+            
                 <div className={styles.bodyAboutBigScreens}>
                     <div></div>
                     <div className={styles.leftSide}>
@@ -54,7 +55,7 @@ const Om = (props) => {
                     </div>
                     <div></div>
                 </div>  
-            <Footer />
+                <Footer />
         </div>
         
         

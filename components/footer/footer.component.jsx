@@ -3,7 +3,8 @@
 import styles from './footer.module.scss'
 
 const Footer = () => (
-    <footer className={styles.footer}>
+    <div>
+        <footer className={styles.footer}>
         <div>
             <div className={styles.layout}>
                 {/* Twitter Icon */}
@@ -41,6 +42,8 @@ const Footer = () => (
             </div>
         </div>     
     </footer>
+    </div>
+    
 )
 
 export default Footer

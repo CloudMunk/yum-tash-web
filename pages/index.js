@@ -6,12 +6,13 @@ import BlockContent from '@sanity/block-content-to-react'
 import dynamic from 'next/dynamic'
 
 // Default Layout
-import DefaultLayout from '../layouts';
+
 import imageUrlBuilder from '@sanity/image-url'
 
 import styles from './index.module.scss'
-// Components
 
+// Header and Footer
+import Header from '../components/menu/menu.component';
 import Footer from '../components/footer/footer.component'
 
 // Images
@@ -53,150 +54,157 @@ const Index = (props) => {
     <div>
       
      {/* {console.log('this is the viewport size', windowWidth)} */}
-        <DefaultLayout />
+        <Header />
         {/* FOLD */}
         <div>
-            <div className={styles.homeContainer}>
-                <div className={styles.gridContainer}>
-                  <div></div> 
-                  <div className={styles.leftDiv}>
-                      <h3 className={styles.leftHeader}>
-                          Unike smaker, unike opplevelser. Velkommen til Yum Tash.
-                      </h3>
-                      <h3 className={styles.leftHeader}>
-                          
-                      </h3>
-                  </div>
-                  <div className={styles.rightDiv}>
-                  <h3
-                      style={{
-                          fontFamily: "Archer SSm A",
-                          fontSize: '17px',
-                          textAlign: 'center',
-                          paddingLeft: '15%',
-                          paddingRight: '15%',
-                          letterSpacing: '0.19em',
-                          fontWeight: '900',
-                          lineHeight: '1.6em',
-                          paddinBottom: '2vw',
-                      }}
-                      >
-                      En matblogg med fokus på miljø & gode opplevelser.
-                  </h3>
-                  
-                  </div>
-                  <div style={{marginLeft:'14vw'}}> 
-                    <img className={styles.mobileHide} width="250px" src={sideBar}/> 
-                  </div>
-                  <div ></div>
-                  <div style={{borderRight:'0.8px solid #808080'}}>
-                  {/* CARD */}
-                  <div className={styles.bodyCard}>
-                  {/* CARD 1 */}
-                  <div className={styles.blog_slider}>
-                      <div className={styles.blog_slider__wrp, styles.swiper_wrapper}>
-                          <div className={styles.blog_slider__item}>
-                              <div className={styles.blog_slider__img}>
-                                  <img
-                                      style={{ zIndex: '1000'}}
-                                      src={urlFor(posts[0].mainImage)
-                                      .width((windowSize < 850) ? 400 : 200)
-                                      .url()}
-                                  />
-                              </div>
-                              <div className={styles.cardText}>
-                                  {/* <span className={styles.blog_slider__code}>{posts[0].publishedAt}</span> */}
-                                  <div className={styles.blog_slider__title}>
-                                      {posts[0].title}
-                                  </div>
-                                  <div className={styles.blog_slider__text}>
-                                      
-                                      <BlockContent
-                                          // style={{ maxWidth: '100px !important'}}
-                                          blocks={posts[0].introduction}
-                                          // imageOptions={{ w: 300, h: 100, fit: 'max' }}
-                                          {...client.config()}
-                                      />
-                                  </div>
-                                  <Link href={`/post/${posts[0].slug.current}`}>
-                                      <a href="#" className={styles.blog_slider__button}>LES MER</a>
-                                  </Link>
-                              </div>
-                          </div>  
-                      </div>
-                  </div>
-                  {/* CARD 2 */}
-                  <div className={styles.blog_slider}>
-                      <div className={styles.blog_slider__wrp, styles.swiper_wrapper}>
-                          <div className={styles.blog_slider__item}>
-                              <div className={styles.blog_slider__img}>
-                                  <img
-                                      style={{ zIndex: '1000'}}
-                                      src={urlFor(posts[1].mainImage)
-                                      .width((windowSize < 850) ? 400 : 200)
-                                      .url()}
-                                  />
-                              </div>
-                              <div className={styles.cardText}>
-                                      {/* <span className={styles.blog_slider__code}>{posts[0].publishedAt}</span> */}
-                                      <div className={styles.blog_slider__title}>
-                                          {posts[1].title}
-                                      </div>
-                                      <div className={styles.blog_slider__text}>
-                                          {/* Make an if statement that puts three ... if intro reaches certain length */}
-                                          <BlockContent
-                                              // style={{ maxWidth: '100px !important'}}
-                                              blocks={posts[1].introduction}
-                                              // imageOptions={{ w: 300, h: 100, fit: 'max' }}
-                                              {...client.config()}
-                                          /> 
-                                      </div>   
-                              </div>
-                          </div>  
-                      </div>
-                      <Link href={`/post/${posts[1].slug.current}`}>
-                          <div className={styles.blog_slider__button}>
-                              <span className={styles.buttonText}>LES MER</span>
-                          </div>
-                      </Link>
-                  </div>
-                  
-                </div>
-            
-                </div>
-                <div>
-                <img 
-                    style={{height: '250px', marginTop: '75px', marginLeft: '6vw'}}
-                    src={orange} 
-                    alt="orange" 
-                />
-                <h2 className={styles.hideOnMobile}
-                style={{marginLeft: '10vw'}}>
-                    Populære Retter
-                </h2>
-                <img 
-                    style={{width:'285px' , marginTop: '75px', marginLeft: '8vw'}}
-                    src={sideBar} 
-                    alt="orange" 
-                />
-                <h2 style={{marginLeft: '10vw'}}>
-                    Unike Opplevelser
-                </h2>
-                <img 
+            <div>
+                <div className={styles.homeContainer}>
+                    <div className={styles.gridContainer}>
+                        <div></div> 
+                        <div className={styles.leftDiv}>
+                            <h3 className={styles.leftHeader}>
+                                Unike smaker, unike opplevelser. Velkommen til Yum Tash.
+                            </h3>
+                            <h3 className={styles.leftHeader}>
+                                
+                            </h3>
+                        </div>
+                        <div className={styles.rightDiv}>
+                        <h3
+                            style={{
+                                fontFamily: "Archer SSm A",
+                                fontSize: '17px',
+                                textAlign: 'center',
+                                paddingLeft: '15%',
+                                paddingRight: '15%',
+                                letterSpacing: '0.19em',
+                                fontWeight: '900',
+                                lineHeight: '1.6em',
+                                paddinBottom: '2vw',
+                            }}
+                            >
+                            En matblogg med fokus på miljø & gode opplevelser.
+                        </h3>
+                        
+                        </div>
+                        <div style={{marginLeft:'14vw'}}> 
+                            <img className={styles.mobileHide} width="250px" src={sideBar}/> 
+                        </div>
+                        <div ></div>
+                        <div style={{borderRight:'0.8px solid #808080'}}>
+                        {/* CARD */}
+                        <div className={styles.bodyCard}>
+                        {/* CARD 1 */}
+                        <div className={styles.blog_slider}>
+                            <div className={styles.blog_slider__wrp, styles.swiper_wrapper}>
+                                <div className={styles.blog_slider__item}>
+                                    <div className={styles.blog_slider__img}>
+                                        <img
+                                            style={{ zIndex: '1000'}}
+                                            src={urlFor(posts[0].mainImage)
+                                            .width((windowSize < 850) ? 400 : 200)
+                                            .url()}
+                                        />
+                                    </div>
+                                    <div className={styles.cardText}>
+                                        {/* <span className={styles.blog_slider__code}>{posts[0].publishedAt}</span> */}
+                                        <div className={styles.blog_slider__title}>
+                                            {posts[0].title}
+                                        </div>
+                                        <div className={styles.blog_slider__text}>
+                                            
+                                            <BlockContent
+                                                // style={{ maxWidth: '100px !important'}}
+                                                blocks={posts[0].introduction}
+                                                // imageOptions={{ w: 300, h: 100, fit: 'max' }}
+                                                {...client.config()}
+                                            />
+                                        </div>
+                                        <Link href={`/post/${posts[0].slug.current}`}>
+                                            <a href="#" className={styles.blog_slider__button}>LES MER</a>
+                                        </Link>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        {/* CARD 2 */}
+                        <div className={styles.blog_slider}>
+                            <div className={styles.blog_slider__wrp, styles.swiper_wrapper}>
+                                <div className={styles.blog_slider__item}>
+                                    <div className={styles.blog_slider__img}>
+                                        <img
+                                            style={{ zIndex: '1000'}}
+                                            src={urlFor(posts[1].mainImage)
+                                            .width((windowSize < 850) ? 400 : 200)
+                                            .url()}
+                                        />
+                                    </div>
+                                    <div className={styles.cardText}>
+                                            {/* <span className={styles.blog_slider__code}>{posts[0].publishedAt}</span> */}
+                                            <div className={styles.blog_slider__title}>
+                                                {posts[1].title}
+                                            </div>
+                                            <div className={styles.blog_slider__text}>
+                                                {/* Make an if statement that puts three ... if intro reaches certain length */}
+                                                <BlockContent
+                                                    // style={{ maxWidth: '100px !important'}}
+                                                    blocks={posts[1].introduction}
+                                                    // imageOptions={{ w: 300, h: 100, fit: 'max' }}
+                                                    {...client.config()}
+                                                /> 
+                                            </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                            <Link href={`/post/${posts[1].slug.current}`}>
+                                <div className={styles.blog_slider__button}>
+                                    <span className={styles.buttonText}>LES MER</span>
+                                </div>
+                            </Link>
+                        </div>
+                        
+                        </div>
                     
-                    // style={{width:'285px' , marginTop: '5px', marginLeft: '3.2vw'}}
-                    className={styles.onMobileBar}
-                    src={nightOut} 
-                    alt="orange" 
-                />
+                        </div>
+                        <div>
+                        <img 
+                            style={{height: '250px', marginTop: '75px', marginLeft: '6vw'}}
+                            src={orange} 
+                            alt="orange" 
+                        />
+                        <h2 className={styles.hideOnMobile}
+                        style={{marginLeft: '10vw'}}>
+                            Populære Retter
+                        </h2>
+                        <img 
+                            style={{width:'285px' , marginTop: '75px', marginLeft: '8vw'}}
+                            src={sideBar} 
+                            alt="orange" 
+                        />
+                        <h2 style={{marginLeft: '10vw'}}>
+                            Unike Opplevelser
+                        </h2>
+                        <img 
+                            
+                            // style={{width:'285px' , marginTop: '5px', marginLeft: '3.2vw'}}
+                            className={styles.onMobileBar}
+                            src={nightOut} 
+                            alt="orange" 
+                        />
+                        </div>
+                        <div></div>
+                        
+                    </div>
+                    
                 </div>
-                <div></div>
+                
             </div>
-            </div>
+            {/* <Footer /> */}
+            <Footer />
         </div>
         
-        {/* <Footer /> */}
-        <Footer />
+        
+        
     </div>
       
     )
